@@ -1,0 +1,153 @@
+/*
+Project Name: Cocktailphabet Style
+Author: Kandice Levero
+*/
+
+
+
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+.clear {
+	clear: both;
+}
+
+
+.acta {
+	font-family: Acta Poster Italic;
+	color: #00004d;
+	font-size: 150px;
+	text-align: center;
+	margin: 0;
+	padding-top: 100px;
+}
+
+.blue_line {
+	width: 680px;
+	height: 10px;
+	border-bottom: 1.5px solid #00004d;
+	margin: 15px auto 0px auto;
+
+}
+
+.header {
+	width: 100%;
+	height: 500px;
+	background-color: #faebeb;
+	margin: 0;
+    background-size: 80px 60px;
+    background-repeat: no-repeat;
+	
+}
+
+.nav_ol {
+	width: 1200px;
+	text-align: center;
+	padding-top: 30px;
+	margin: auto;
+
+
+}
+
+.nav_li {
+	display: inline-block;	
+	padding: 0px;
+	font-family: Helvetica;
+	color: #000066;
+	font-weight: 200;
+	font-size: 25px;
+	padding: 0px 100px 0px 100px;
+}
+
+
+}
+
+.intro {
+	height: 600px;
+	width: 100%;
+	/*border: 1px solid black;*/
+}
+
+
+.us {
+	padding-right: 830px;
+}
+
+.intro_block {
+	background-image: url("../images/table_setting.png");
+	width: 100%;
+	height: 500px;
+	display: block;
+	margin-top: 30px;
+	background-size: cover; /*How I got the image to cover the whole width of the browser*/
+    background-repeat: no-repeat;
+    background-position: center center; /*Kept image centered in the moving space*/
+}
+
+.white_block {
+	width: 700px;
+	height: 350px;
+	background-color: rgba(255, 255, 255, 0.8);
+	margin: 0px auto;
+	position: relative;
+	top: 75px;
+	border-top: 1px solid #00004d;
+	border-bottom: 1px solid #00004d;
+	
+}
+
+.parenthesis_1 {
+	font-size: 200px;
+	font-family: Helvetica;
+	color: #00004d;
+	padding: 50px 0px 0px 30px;
+	margin: 0px;
+	float: left;
+}
+
+.parenthesis_2 {
+	font-size: 200px;
+	font-family: Helvetica;
+	color: #00004d;
+	padding: 50px 40px 0px 0px;
+	margin: 0px;
+	float: right;
+}
+
+.intro_par {
+	width: 430px;
+	font-family: Acta Poster Italic;
+	color: #00004d;
+	font-size: 45px;
+	float: left;
+	margin-left: 35px;
+	text-align: center;
+	padding-top: 5px;
+}
+
+.temp_grid {
+	margin-top: 30px;
+	background-size: cover; /*How I got the image to cover the whole width of the browser*/
+    background-repeat: no-repeat;
+    background-position: center center; /*Kept image centered in the moving space*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
