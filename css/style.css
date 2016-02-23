@@ -57,7 +57,9 @@ Author: Kandice Levero
 
 }
 
-
+/***************************************************
+                         NAV 
+/***************************************************/
 
 .nav_ol {
 	width: 1200px;
@@ -141,7 +143,9 @@ Author: Kandice Levero
 	padding-top: 5px;
 }
 
-/*BUBS*/
+/***************************************************
+                       BUBS 
+/***************************************************/
 
 .bub_parent {
 	text-align: center;
@@ -212,17 +216,101 @@ Author: Kandice Levero
 	text-align: center;
 }
 
+/***************************************************
+                   ALPHABET GRID 
+/***************************************************/
 
 
-
-.temp_grid img {
+.alphabet_grid {
+	background-image: url("../images/grid_bkg.png"); 
 	margin-top: 30px;
 	width: 100%;
+	height: 2234px;
+	display: block;
+	background-size: cover; /*How I got the image to cover the whole width of the browser*/
+    background-repeat: no-repeat;
+    background-position: center center; /*Kept image centered in the moving space*/
+    padding-top: 80px;
+}
 
+.alphabet_parent {
+	width: 70%;
+	height: 1800px;
+	border-right: 1px solid #00004d;
+	border-left: 1px solid #00004d;
+	margin: 0px auto;
+}
+
+.row_parent {
+	width: 100%;
+	height:200px;
+	/*border: 1px solid black;*/
+}
+
+.letter_box {
+	width: 33%;
+	height: 200px;
+	/*border: 1px solid black;*/
+	text-align: center;
+	display: inline-block;
+	font-family: 'Lato', sans-serif;
+	font-weight: 100;
+	color: #00004d;
+	padding-top: 20px;
+	font-size: 150px;
+}
+
+.odd_letter_box {
+	width: 49.6%;
+	height: 200px;
+	/*border: 1px solid black;*/
+	text-align: center;
+	display: inline-block;
+	font-family: 'Lato', sans-serif;
+	font-weight: 100;
+	color: #00004d;
+	padding-top:20px;
+	font-size: 150px;
+}
+
+
+.cheers {
+	font-family: ActaPoster-Italic;
+	font-weight: normal;
+	font-style: normal;
+	color: #00004d;
+	font-size: 150px;
+	text-align: center;
+	margin: 0;
+	padding-top: 80px;
+}
+
+.social_media_block {
+	width: 100%;
+	height: 150px;
+	background-color: white;
+	margin-top: 50px;
+}
+
+.copyright {
+	width: 100%;
+	height: 120px;
+	background-color: #f5f53d;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	color: #00004d;
+	padding-top:50px;
+	font-size: 30px;
+	text-align: center;
 }
 
 
 
+
+
+/***************************************************
+                  RESPONSIVE CSS 
+/***************************************************/
 
 @media only screen and (max-width: 1600px)
 {
