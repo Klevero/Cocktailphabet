@@ -244,13 +244,11 @@ Author: Kandice Levero
 .row_parent {
 	width: 100%;
 	height:200px;
-	/*border: 1px solid black;*/
 }
 
 .letter_box {
 	width: 33%;
 	height: 200px;
-	/*border: 1px solid black;*/
 	text-align: center;
 	display: inline-block;
 	font-family: 'Lato', sans-serif;
@@ -264,7 +262,6 @@ Author: Kandice Levero
 .odd_letter_box {
 	width: 49.6%;
 	height: 200px;
-	/*border: 1px solid black;*/
 	text-align: center;
 	display: inline-block;
 	font-family: 'Lato', sans-serif;
@@ -305,16 +302,21 @@ Author: Kandice Levero
 	text-align: center;
 }
 
-.yellow_letter_bub {
-	background-image: url("../images/yellow_letter_bub.png");
-	background-position: center; 
-	width: 25%;
-	display: inline-block;
-	margin: 20px 20px 0px 70px;
-	background-repeat: no-repeat;
-	padding-right: 20px;
+.yellow_hover {
+	position: relative;
+	z-index: 1;
 }
 
+.bg {
+	background: url("../images/yellow_letter_bub.png") no-repeat center;
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0;
+}
 
 
 

@@ -1,26 +1,11 @@
-
-  /*$("#effect").hover(function() {
-        $(this).animate({opacity: '1'}, "slow");
-    }, function () {
-        $(this).animate({opacity: '0.5'}, "slow");
-    });*/
-  
-
-
-
-
-
-
-
-
-
-
- $('.yellow_hover').hover(function(){
-       $(this).toggleClass('yellow_letter_bub');
-   });
-
-
-
+$('.letter_box').hover(
+	function() {
+    	$(this).find('.bg').animate({opacity: 1}, 1000);
+    }, 
+    function() {
+        $(this).find('.bg').animate({opacity: 0}, 0);
+    }
+);
 
 
 
