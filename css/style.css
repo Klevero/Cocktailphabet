@@ -307,6 +307,7 @@ Author: Kandice Levero
 	z-index: 1;
 }
 
+<<<<<<< Updated upstream
 .bg {
 	background: url("../images/yellow_letter_bub.png") no-repeat center;
 	position: absolute;
@@ -317,6 +318,46 @@ Author: Kandice Levero
     z-index: -1;
     opacity: 0;
 }
+=======
+/***************************************************
+                  COCKTAIL PAGE 
+/***************************************************/
+..ckt_header {
+	width: 100%;
+	height: 300px;
+	background-color: #faebeb;
+	margin: 0;
+	font-family: ActaPoster-Italic;
+	font-weight: normal;
+	font-style: normal;
+	color: #00004d;
+	font-size: 150px;
+	text-align: center;
+	margin: 0;
+	padding-top: 50px;
+}
+
+
+
+
+
+.ckt_header_block {
+	width: 100%;
+	height: 300px;
+	background-color: #faebeb;
+	margin: 0;
+	font-family: ActaPoster-Italic;
+	font-weight: normal;
+	font-style: normal;
+	color: #00004d;
+	font-size: 150px;
+	text-align: center;
+	margin: 0;
+	padding-top: 50px;
+}
+
+
+>>>>>>> Stashed changes
 
 
 
