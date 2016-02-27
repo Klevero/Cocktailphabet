@@ -1,21 +1,27 @@
-$(document).ready(function(){
-	 $("#answer1").hide();
-    $("#question1").click(function(){
-        $("#answer1").slideDown();
-    });
-});
 
-$(document).ready(function(){
-	 $("#answer2").hide();
-    $("#question2").click(function(){
-        $("#answer2").slideDown();
-    });
-});
+  /*$("#effect").hover(function() {
+        $(this).animate({opacity: '1'}, "slow");
+    }, function () {
+        $(this).animate({opacity: '0.5'}, "slow");
+    });*/
+  
 
-$(document).ready(function(){
-	 $("#answer3").hide();
-    $("#question3").click(function(){
-        $("#answer3").slideDown();
-    });
-});
+
+
+
+
+
+
+
+
+
+ $('.yellow_hover').hover(function(){
+       $(this).toggleClass('yellow_letter_bub');
+   });
+
+
+
+
+
+
 
