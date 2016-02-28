@@ -46,7 +46,7 @@ Author: Kandice Levero
 	font-size: 150px;
 	text-align: center;
 	margin: 0;
-	padding-top: 180px;
+	padding-top: 120px;
 }
 
 .blue_line {
@@ -259,6 +259,20 @@ Author: Kandice Levero
 	cursor: pointer;
 }
 
+/*Added to get pink bubs to hover in JQuery*/
+.pink_letter_box {
+	width: 33%;
+	height: 200px;
+	text-align: center;
+	display: inline-block;
+	font-family: 'Lato', sans-serif;
+	font-weight: 100;
+	color: #00004d;
+	padding-top: 20px;
+	font-size: 150px;
+	cursor: pointer;
+}
+
 .odd_letter_box {
 	width: 49.6%;
 	height: 200px;
@@ -305,6 +319,7 @@ Author: Kandice Levero
 .yellow_hover {
 	position: relative;
 	z-index: 1;
+	padding-right: 20px;
 }
 
 
@@ -319,33 +334,32 @@ Author: Kandice Levero
     opacity: 0;
 }
 
-/***************************************************
-                  COCKTAIL PAGE 
-/***************************************************/
-..ckt_header {
-	width: 100%;
-	height: 300px;
-	background-color: #faebeb;
-	margin: 0;
-	font-family: ActaPoster-Italic;
-	font-weight: normal;
-	font-style: normal;
-	color: #00004d;
-	font-size: 150px;
-	text-align: center;
-	margin: 0;
-	padding-top: 50px;
+.pink_bg {
+	background: url("../images/pink_letter_bub.png") no-repeat center;
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0;
 }
 
 
-
-
+/***************************************************
+                  COCKTAIL PAGE 
+/***************************************************/
 
 .ckt_header_block {
 	width: 100%;
 	height: 300px;
 	background-color: #faebeb;
 	margin: 0;
+}
+
+.ckt_header {
+	width: 100%;
+	margin: 0;
 	font-family: ActaPoster-Italic;
 	font-weight: normal;
 	font-style: normal;
@@ -355,7 +369,6 @@ Author: Kandice Levero
 	margin: 0;
 	padding-top: 50px;
 }
-
 
 
 
