@@ -83,6 +83,10 @@ Author: Kandice Levero
 
 }
 
+/***************************************************
+                     INTRO BLOCK 
+/***************************************************/
+
 .intro {
 	height: 600px;
 	width: 100%;
@@ -143,6 +147,7 @@ Author: Kandice Levero
 	padding-top: 5px;
 }
 
+
 /***************************************************
                        BUBS 
 /***************************************************/
@@ -168,6 +173,7 @@ Author: Kandice Levero
 	background-size: 90% 100%;
 	width: 482px;
 	margin: 0px 20px 0px 20px;
+	cursor: pointer;
 }
 
 .bub_2 {
@@ -176,6 +182,7 @@ Author: Kandice Levero
 	background-size: 100% 100%;
 	width: 394px;
 	margin: 0px 20px 0px 20px;
+	cursor: pointer;
 }
 
 .bub_3 {
@@ -184,6 +191,7 @@ Author: Kandice Levero
 	background-size: 90% 100%;
 	width: 482px;
 	margin: 0px 20px 0px 20px;
+	cursor: pointer;
 }
 
 .search_text{
@@ -287,35 +295,10 @@ Author: Kandice Levero
 }
 
 
-.cheers {
-	font-family: ActaPoster-Italic;
-	font-weight: normal;
-	font-style: normal;
-	color: #00004d;
-	font-size: 150px;
-	text-align: center;
-	margin: 0;
-	padding-top: 80px;
-}
 
-.social_media_block {
-	width: 100%;
-	height: 150px;
-	background-color: white;
-	margin-top: 50px;
-}
-
-.copyright {
-	width: 100%;
-	height: 120px;
-	background-color: #f5f53d;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 400;
-	color: #00004d;
-	padding-top:50px;
-	font-size: 30px;
-	text-align: center;
-}
+/***************************************************
+                    ALPHABET HOVER 
+/***************************************************/
 
 .yellow_hover {
 	position: relative;
@@ -351,48 +334,140 @@ Author: Kandice Levero
                   COCKTAIL PAGE 
 /***************************************************/
 
-.ckt_header_block {
+.g_block_img {
+	background-image: url("../images/gh_bk_filler.png");
 	width: 100%;
-	height: 220px;
-	background-color: #faebeb;
-	margin: 0;
-	text-align: center;
-	padding-top: 30px;
+	height: 400px;
+	display: block;
+	margin-top: 30px;
+	background-size: cover; /*How I got the image to cover the whole width of the browser*/
+    background-repeat: no-repeat;
+    background-position: center center; /*Kept image centered in the moving space*/
 }
 
-.ckt_header {
+
+
+.cocktail_intro_parent {
+	width: 100%;
+	height: 350px;
+	border: 1px solid black;
+	margin: auto;
+	text-align: center;
+}
+
+.drink_letter {
+	height: 270px;
+	display: inline-block;
+	width: 300px;
+	margin: 40px 20px 15px 0px;
+}
+
+.stands_for {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	height: 270px;
+	color: #00004d;
+	font-size: 30px;
+	display: inline-block;
+	vertical-align: middle;
+	/*To vertically align text I added a height same
+	as the G image and then did middle vertical align*/
+	margin-right: 30px;
+}
+
+.vertical_divider {
+	width: 3px;
+	height: 100px;
+	border-right: 1.5px solid #00004d;
+	display: inline-block;
+	margin-bottom: 70px;
+}
+
+.cocktail_title {
+	font-family: ActaPoster-Italic;
+	font-weight: normal;
+	font-style: normal;
+	height: 320px;
+	color: #00004d;
+	font-size: 75px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 30px;
+}
+
+.cocktail_body {
+	background-image: url("../images/ckt_bkg_1.png");
+	width: 100%;
+	height: 1580px;
+	display: block;
+	margin-top: 0px;
+	background-size: cover; /*How I got the image to cover the whole width of the browser*/
+    background-repeat: no-repeat;
+    background-position: center center; /*Kept image centered in the moving space*/
+}
+
+.recipe_parent {
+	width: 58%;
+	height: 500px;
+	display: inline-block;
+	border: 1px solid black;
+}
+
+.cocktail_silo {
+	width: 38%;
+	height: 500px;
+	display: inline-block;
+	border: 1px solid black;
+}
+
+
+
+
+/***************************************************
+                       FOOTER 
+/***************************************************/
+
+.cheers {
 	font-family: ActaPoster-Italic;
 	font-weight: normal;
 	font-style: normal;
 	color: #00004d;
-	font-size: 120px;
+	font-size: 150px;
+	text-align: center;
 	margin: 0;
-	padding-top: 50px;
-	text-decoration: none;
+	padding-top: 80px;
 }
 
-.drink_letter_parent {
+.social_media_block {
 	width: 100%;
-	height: 350px;
-	border: 1px solid black;
+	height: 150px;
+	background-color: white;
+	margin-top: 50px;
 }
 
-.drink_letter {
-	background-image: url("../images/letter_g.png");
-	width: 300px;
-	height: 270px;
-	float: left;
-	width: 482px;
-	margin: 40px 20px 15px 100px;
-	background-repeat: no-repeat;
+.copyright {
+	width: 100%;
+	height: 120px;
+	background-color: #f5f53d;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	color: #00004d;
+	padding-top:50px;
+	font-size: 30px;
+	text-align: center;
 }
 
+/***************************************************
+                   TOP BUTTON 
+/***************************************************/
 
-
-
-
-
-
+.top_pg_button {
+	position: fixed;
+	bottom: -360px;
+	right: 20px;
+	cursor: pointer;
+	opacity:0;
+}
 
 
 /***************************************************

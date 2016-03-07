@@ -16,6 +16,44 @@ $('.pink_letter_box').hover(
     }
 );
 
+/********** TOP SCROLL BUTTON ************/
+
+$('.top_pg_button').click(
+    function() {
+        $('html, body').animate(
+            { scrollTop: 0 },
+            'slow'
+        );
+    }
+);
+
+/****** WHEN TOP BUTTON APPEARS DISAPPEARS ******/
+
+$(window).scroll(
+    function (event) {
+        var scroll = $(window).scrollTop();
+        console.log(scroll);
+        // Check the Position
+
+        if(scroll > 800){
+
+            $('.top_pg_button').stop().animate(
+                {'bottom':'20px', opacity:1},
+                'slow'
+            );
+
+        } else {
+
+            $('.top_pg_button').stop().animate(
+                {'bottom':'-360px', opacity:0},
+                'slow'
+            );
+
+        }
+    }
+);
+
+
 
 
 
