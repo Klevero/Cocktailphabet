@@ -50,8 +50,55 @@ $(window).scroll(
             );
 
         }
+
+/****** GREYHOUND COCKTAIL SLIDES FROM RIGHT ******/
+
+        if(scroll > 4436 && scroll < 5400){
+
+            console.log('aaaa');
+
+            $('.greyhound_cocktail').stop().animate(
+                {'margin-left':'0px', opacity:1},
+                'slow'
+            );
+
+        } else {
+
+            $('.greyhound_cocktail').stop().animate(
+                {'margin-left':'400px', opacity:0},
+                'slow'
+            );
+
+        }
     }
 );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
