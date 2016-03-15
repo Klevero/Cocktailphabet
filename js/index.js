@@ -53,6 +53,16 @@ $(window).scroll(
 
         }
 
+/****** G LETTER LINK TO COCKTAIL ******/
+
+$(".letterg").click(function() {
+    $('body').stop().animate({
+        scrollTop: $(".g_block_img").offset().top
+    }, 500, function(){console.log('animateion finished') });
+});
+
+
+
 /****** GREYHOUND COCKTAIL SLIDES FROM RIGHT ******/
 
         if(scroll > 4436 && scroll < 5400){
