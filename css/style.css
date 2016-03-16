@@ -86,6 +86,7 @@ Author: Kandice Levero
 
 .us {
 	padding-right: 830px;
+	cursor: pointer;
 }
 
 /***************************************************
@@ -140,7 +141,7 @@ Author: Kandice Levero
 }
 
 .profile_box_parent {
-	width: 90%;
+	width: 100%;
 	/*border: 1px solid white;*/
 	margin: 900px auto 0px auto;
 	padding-bottom: 50px;
@@ -188,7 +189,7 @@ Author: Kandice Levero
 	color: #f5f53d;
 	font-size: 18px;
 	line-height: 20px;
-	margin-top: 40px;
+	margin-top: 20px;
 	display: block;
 	text-align: center;
 }
@@ -818,7 +819,6 @@ Author: Kandice Levero
 	height: 10px;
 	border-bottom: 1.5px solid #00004d;
 	margin: 15px auto 0px auto;
-
 }
 
 
@@ -890,6 +890,9 @@ Author: Kandice Levero
 
 }
 
+
+
+
 @media only screen and (max-width: 414px) 
 { 
 	.logo {
@@ -900,8 +903,55 @@ Author: Kandice Levero
 	font-size: 40px;
 	text-align: center;
 	margin: 0;
-	padding-top: 100px;
-}	
+	padding-top: 50px;
+	
+	}	
+
+/***************************************************
+                     INTRO BLOCK 
+/***************************************************/
+
+
+
+.intro_block {
+	background-image: url("../images/ckt_laydown.png");
+	width: 100%;
+	height: 1380px;
+	display: block;
+	margin-top: 400px;
+    padding-top: 350px;
+	background-size: cover; /*How I got the image to cover the whole width of the browser*/
+    background-repeat: no-repeat;
+    background-position: center center; /*Kept image centered in the moving space*/
+}
+
+.white_block {
+	width: 100%;
+	height: 350px;
+	background-color: rgba(255, 255, 255, 0.8);
+	margin: 100px auto 0px auto;
+	border-top: 1px solid #00004d;
+	border-bottom: 1px solid #00004d;
+}
+
+.parenthesis_1 {
+	display: none;
+}
+
+.parenthesis_2 {
+	display: none;
+}
+
+.intro_par {
+	width: 100%;
+	font-family: ActaPoster-Italic;
+	color: #00004d;
+	font-size: 45px;
+	margin-left: 35px;
+	text-align: center;
+	margin: 0;
+	padding-top: 40px;
+}
 
 }
 

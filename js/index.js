@@ -88,7 +88,7 @@ $(".letterg").click(function() {
 /****** ABOUT PAGE CHANGES ******/
 var about = false;
 
-$(".about").click(function(){
+$(".about, .us").click(function(){
 
     toggleAbout();
 
@@ -185,7 +185,7 @@ function toggleContact()
     /*console.log(contact)*/
     if (contact === false) {
 
-        $('.contact_body').animate({'top':'300px'}, 600);
+        $('.contact_body').animate({'top':'250px'}, 600);
         contact = true;
 
     } else {
