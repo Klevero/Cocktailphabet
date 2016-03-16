@@ -895,17 +895,40 @@ Author: Kandice Levero
 
 @media only screen and (max-width: 414px) 
 { 
+
+/***************************************************
+                     HEADER 
+/***************************************************/
 	.logo {
 	font-family: ActaPoster-Italic;
 	font-weight: normal;
 	font-style: normal;
-	color: #00004d;
 	font-size: 40px;
 	text-align: center;
 	margin: 0;
 	padding-top: 50px;
 	
 	}	
+	.nav_ol {
+	width: 100%;
+	text-align: center;
+	margin: auto;
+}
+
+.nav_li {
+	width: 100%;
+	font-family: Helvetica;
+	color: #000066;
+	font-weight: 200;
+	font-size: 25px;
+	padding-bottom: 20px;
+	cursor: pointer;
+}
+
+.us {
+	padding-right: 830px;
+	cursor: pointer;
+}
 
 /***************************************************
                      INTRO BLOCK 
