@@ -12,9 +12,6 @@ Author: Kandice Levero
 	clear: both;
 }
 
-body{
-	overflow-x:hidden;
-}
 /***************************************************
                        HEADER 
 /***************************************************/
@@ -39,13 +36,11 @@ body{
 .header {
 	width: 100%;
 	height: 800px;
-	/*background-color: #faebeb;*/
 	margin: 0;
     background-size: 80px 60px;
     background-repeat: no-repeat;
 	
 }
-
 
 .logo {
 	font-family: ActaPoster-Italic;
@@ -205,6 +200,7 @@ body{
 	background-image: url("../images/contact_bkg.png");
 	width: 770px;
 	height: 503px;
+	background-repeat: no-repeat;
 	position: absolute;
 	margin: auto;
 	left:0;
@@ -281,13 +277,13 @@ body{
 .intro_block {
 	background-image: url("../images/ckt_laydown.png");
 	width: 100%;
-	height: 1380px;
+	height: 3000px;
 	display: block;
-	margin-top: 400px;
+	margin-top: 550px;
     padding-top: 350px;
-	background-size: cover; /*How I got the image to cover the whole width of the browser*/
     background-repeat: no-repeat;
-    background-position: center center; /*Kept image centered in the moving space*/
+    background-size: cover;
+    background-position: top center; /*Kept image centered in the moving space*/
 }
 
 .white_block {
@@ -419,9 +415,88 @@ body{
 }
 
 /***************************************************
-                   ALPHABET GRID 
+              	  NO LETTER POPUP
 /***************************************************/
+.not_yet {
+	background-image: url("../images/not_yet.png");
+	width:600px;
+	height:600px;
+ 	top:150px;
+	display: block;
+	text-align: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+	position: fixed;
+	margin: auto;
+	left:0;
+    right:0;
+	z-index: 130;
+	opacity: 0;
+	display: none;
 
+}
+
+.not_yet_button {
+	position: absolute;
+	top:50px;
+	right: 40px;
+}
+
+.have_not {
+	width: 80%;
+	font-family: ActaPoster-Italic;
+	font-weight: normal;
+	font-style: normal;
+	color: #F5E95B;
+	font-size: 50px;
+	margin: auto;
+	display:block;
+	padding-top: 180px;
+}
+
+.not_yet_divider {
+	width: 40%;
+	height: 30px;
+	border-bottom: 1px solid #F5E95B;
+	margin: auto;
+}
+
+.help_letter {
+	width: 70%;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	color: white;
+	font-size: 20px;
+	line-height: 23px;
+	margin: auto;
+	padding-top: 30px;
+}
+
+.email_2 {
+	font-family: ActaPoster-Italic;
+	font-weight: normal;
+	font-style: normal;
+	color: #494987;
+	font-size: 60px;
+	margin: auto;
+	padding-top: 20px;
+}
+
+.our_email_2 a {
+	width: 70%;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	color: white;
+	font-size: 18px;
+	margin: auto;
+	padding-top: 10px;
+	text-decoration: none;
+}
+
+/***************************************************
+              	  ALPHABET GRID
+/***************************************************/
 
 .alphabet_grid {
 	background-image: url("../images/grid_bkg.png"); 
@@ -433,8 +508,7 @@ body{
     background-repeat: no-repeat;
     background-position: center center; /*Kept image centered in the moving space*/
     padding-top: 80px;
-
-    overflow: hidden;
+    z-index: 120;
 }
 
 .alphabet_parent {
@@ -540,12 +614,11 @@ body{
 /***************************************************/
 
 .g_block_img {
-	/*background-image: url("../images/gh_bk_filler.png");*/
+	background-image: url("../images/after_grid.png");
 	width: 100%;
 	height: 400px;
-	border: 1px solid black;
 	display: block;
-	margin-top: 200px;
+	margin-top: 150px;
 	background-size: cover; /*How I got the image to cover the whole width of the browser*/
     background-repeat: no-repeat;
     background-position: center center; /*Kept image centered in the moving space*/
@@ -563,9 +636,7 @@ body{
 }
 
 .drink_letter {
-	height: 270px;
 	display: inline-block;
-	width: 270px;
 	margin: 20px 0px 15px 0px;
 }
 
@@ -596,7 +667,7 @@ body{
 	font-style: normal;
 	height: 320px;
 	color: #00004d;
-	font-size: 75px;
+	font-size: 90px;
 	display: inline-block;
 	vertical-align: middle;
 	margin-left: 30px;
@@ -683,7 +754,7 @@ body{
 	height: 300px;
 	border-right: 1.5px solid #00004d;
 	display: inline-block;
-	margin-bottom: 100px;
+	margin-bottom: 40px;
 }
 
 .bar_info {
@@ -764,6 +835,13 @@ body{
 
 @media only screen and (max-width: 1600px)
 {
+/***************************************************
+                       BUBS 
+/***************************************************/
+	.bub_parent {
+	margin-top: 330px;
+	}
+
 	.bub {
 		height: 276px;
 	}
@@ -824,10 +902,18 @@ body{
 	height: 10px;
 	border-bottom: 1.5px solid #00004d;
 	margin: 15px auto 0px auto;
+	}
+/***************************************************
+                  INTRO BLOCK 
+/***************************************************/
+	.intro_block {
+	height: 2000px;
+	margin-top: 600px;
 }
 
 
 }
+
 
 @media only screen and (max-width: 1024px)
 { 
@@ -893,6 +979,11 @@ body{
 	margin: 15px auto 0px auto;
 	}
 
+	.intro_block {
+		height: 1500px;
+	}
+
+
 }
 
 
@@ -912,7 +1003,7 @@ body{
 	height: 600px;
 	/*background-color: #faebeb;*/
 	margin: 0;
-    background-size: 80px 60px;
+
     background-repeat: no-repeat;
 	
 }
@@ -952,20 +1043,6 @@ body{
 /***************************************************
                      INTRO BLOCK 
 /***************************************************/
-
-
-
-.intro_block {
-	background-image: url("../images/ckt_laydown.png");
-	width: 100%;
-	height: 1380px;
-	display: block;
-	margin-top: 450px;
-    padding-top: 100px;
-	background-size: cover; /*How I got the image to cover the whole width of the browser*/
-    background-repeat: no-repeat;
-    background-position: center center; /*Kept image centered in the moving space*/
-}
 
 .white_block {
 	width: 100%;
@@ -1059,6 +1136,11 @@ body{
 .blue_line {
 	width:50px;
 }
+
+
+	.intro_block {
+		height: 750px;
+	}
 
 }
 

@@ -29,6 +29,47 @@ $('.top_pg_button').click(
     }
 );
 
+/****** LETTER IS NOT AVAILABLE YET ******/
+var notAvailable = false;
+
+$(".no_letter").click(function(){
+
+    togglenotAvailable();
+
+});
+
+
+$(".not_yet_button").click(function(){
+    
+    togglenotAvailable();
+
+});
+
+function togglenotAvailable()
+{   
+    /*console.log(contact)*/
+    if (notAvailable === false) {
+
+        $('.not_yet').delay(600).css({'display':'block', 'opacity':'1'});
+        notAvailable = true;
+
+    } else {
+
+         $('.not_yet').delay(600).css({'display':'none', 'opacity':'0'});
+         notAvailable = false;
+
+    }
+};
+
+/****** SEARCH BY LETTER BUTTON ******/
+
+$(".bub_1").click(function() {
+    $('body').stop().animate({
+        scrollTop: $(".alphabet_grid").offset().top
+    }, 500, function(){console.log('animateion finished') });
+});
+
+
 /****** WHEN TOP BUTTON APPEARS DISAPPEARS ******/
 
 $(window).scroll(
@@ -57,7 +98,7 @@ $(window).scroll(
 
 $(".letterg").click(function() {
     $('body').stop().animate({
-        scrollTop: $(".g_block_img").offset().top
+        scrollTop: $(".cocktail_intro_parent").offset().top
     }, 500, function(){console.log('animateion finished') });
 });
 
@@ -65,7 +106,7 @@ $(".letterg").click(function() {
 
 /****** GREYHOUND COCKTAIL SLIDES FROM RIGHT ******/
 
-        if(scroll > 4436 && scroll < 5400){
+        if(scroll > 5300 && scroll < 6400){
 
             console.log('aaaa');
 
@@ -195,6 +236,14 @@ function toggleContact()
 
     }
 };
+
+/****** SEARCH BY LETTER BUTTON ******/
+
+$(".bub_1").click(function() {
+    $('body').stop().animate({
+        scrollTop: $(".alphabet_grid").offset().top
+    }, 500, function(){console.log('animateion finished') });
+});
 
 
 
