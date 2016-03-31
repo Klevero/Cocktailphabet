@@ -1,20 +1,226 @@
+
+
+/*
+
+    Cocktail Data Base (Array of Cocktail Object)
+
+
+*/
+var cocktail_array = [
+    
+    {
+        'letter':'a',
+        'thumbnail_class':'yellow_bg',
+        'thumbnail_odd':'false',
+        'internal_link':'incomplete'
+    },
+    {
+        'letter':'b',
+        'thumbnail_class':'yellow_bg',
+        'thumbnail_odd':'false',
+        'internal_link':'incomplete'
+    },
+    {
+        'letter':'c',
+        'thumbnail_class':'yellow_bg',
+        'thumbnail_odd':'false',
+        'internal_link':'incomplete'
+    },
+    {
+        'letter':'d',
+        'thumbnail_class':'yellow_bg',
+        'thumbnail_odd':'false',
+        'internal_link':'incomplete'
+    },
+    {
+        'letter':'e',
+        'thumbnail_class':'yellow_bg',
+        'thumbnail_odd':'false',
+        'internal_link':'incomplete'
+    },
+    {
+        'letter':'f',
+        'thumbnail_class':'yellow_bg',
+        'thumbnail_odd':'false',
+        'internal_link':'incomplete'
+    },
+      {
+        'letter':'g',
+        'thumbnail_class':'yellow_bg',
+        'thumbnail_odd':'false',
+        'internal_link':'.g_block_img'
+    },
+    {
+        'letter':'h',
+        'thumbnail_class':'yellow_bg',
+        'thumbnail_odd':'false',
+        'internal_link':'incomplete'
+    },
+    {
+        'letter':'i',
+        'thumbnail_class':'yellow_bg',
+        'thumbnail_odd':'false',
+        'internal_link':'incomplete'
+    },
+      {
+        'letter':'j',
+        'thumbnail_class':'yellow_bg',
+        'thumbnail_odd':'false',
+        'internal_link':'incomplete'
+    },
+    {
+        'letter':'k',
+        'thumbnail_class':'yellow_bg',
+        'thumbnail_odd':'false',
+        'internal_link':'incomplete'
+    },
+    {
+        'letter':'l',
+        'thumbnail_class':'yellow_bg',
+        'thumbnail_odd':'false',
+        'internal_link':'incomplete'
+    },
+      {
+        'letter':'m',
+        'thumbnail_class':'pink_bg',
+        'thumbnail_odd':'false',
+        'internal_link':'incomplete'
+    },
+    {
+        'letter':'n',
+        'thumbnail_class':'yellow_bg',
+        'thumbnail_odd':'false',
+        'internal_link':'incomplete'
+    },
+    {
+        'letter':'o',
+        'thumbnail_class':'yellow_bg',
+        'thumbnail_odd':'false',
+        'internal_link':'incomplete'
+    },
+      {
+        'letter':'p',
+        'thumbnail_class':'pink_bg',
+        'thumbnail_odd':'false',
+        'internal_link':'incomplete'
+    },
+    {
+        'letter':'q',
+        'thumbnail_class':'pink_bg',
+        'thumbnail_odd':'false',
+        'internal_link':'incomplete'
+    },
+    {
+        'letter':'r',
+        'thumbnail_class':'yellow_bg',
+        'thumbnail_odd':'false',
+        'internal_link':'incomplete'
+    },
+       {
+        'letter':'s',
+        'thumbnail_class':'pink_bg',
+        'thumbnail_odd':'false',
+        'internal_link':'incomplete'
+    },
+    {
+        'letter':'t',
+        'thumbnail_class':'pink_bg',
+        'thumbnail_odd':'false',
+        'internal_link':'incomplete'
+    },
+    {
+        'letter':'u',
+        'thumbnail_class':'yellow_bg',
+        'thumbnail_odd':'false',
+        'internal_link':'incomplete'
+    },
+       {
+        'letter':'v',
+        'thumbnail_class':'pink_bg',
+        'thumbnail_odd':'false',
+        'internal_link':'incomplete'
+    },
+    {
+        'letter':'w',
+        'thumbnail_class':'pink_bg',
+        'thumbnail_odd':'false',
+        'internal_link':'incomplete'
+    },
+    {
+        'letter':'x',
+        'thumbnail_class':'pink_bg',
+        'thumbnail_odd':'false',
+        'internal_link':'incomplete'
+    }
+];
+
+//console.log(cocktail_array);
+
+
+for(var i=0; i<cocktail_array.length; i++){
+    
+    console.log( cocktail_array[i] );
+
+    /****** Creating HTML for each letter ******/
+
+    $('.row_1').append('<div class="letter_box yellow_hover no_letter" id="letter_'+i+'" data-id="'+i+'"><div class="bg '+ cocktail_array[i].thumbnail_class +'"></div><span>'+ cocktail_array[i].letter.toUpperCase() +'</span></div>');
+
+
+    /****** Creating link to each letter ******/
+    if(cocktail_array[i].internal_link !== "incomplete"){
+        
+        $("#letter_"+i ).click(function() {
+
+            $('body').stop().animate({
+                scrollTop: $( cocktail_array[$(this).data('id')].internal_link ).offset().top
+            }, 500, function(){console.log('animateion finished') });
+        });
+
+    }else{
+
+        togglenotAvailable();
+        
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /********** ALPHABET LETTER HOVER ************/
 
 $('.letter_box span').hover(
 	function() {
-    	$(this).parent().find('.bg').animate({opacity: 1}, 800);
+    	$(this).parent().find('.bg').stop().animate({opacity: 1}, 800);
     }, 
     function() {
-        $(this).parent().find('.bg').animate({opacity: 0}, 0);
-    }
-);
-
-$('.pink_letter_box span').hover(
-	function() {
-    	$(this).parent().find('.pink_bg').animate({opacity: 1}, 800);
-    }, 
-    function() {
-        $(this).parent().find('.pink_bg').animate({opacity: 0}, 0);
+        $(this).parent().find('.bg').stop().animate({opacity: 0}, 0);
     }
 );
 
@@ -31,12 +237,6 @@ $('.top_pg_button').click(
 
 /****** LETTER IS NOT AVAILABLE YET ******/
 var notAvailable = false;
-
-$(".no_letter").click(function(){
-
-    togglenotAvailable();
-
-});
 
 
 $(".not_yet_button").click(function(){
@@ -94,19 +294,12 @@ $(window).scroll(
 
         }
 
-/****** G LETTER LINK TO COCKTAIL ******/
-
-$(".letterg").click(function() {
-    $('body').stop().animate({
-        scrollTop: $(".cocktail_intro_parent").offset().top
-    }, 500, function(){console.log('animateion finished') });
-});
 
 
 
 /****** GREYHOUND COCKTAIL SLIDES FROM RIGHT ******/
 
-        if(scroll > 5300 && scroll < 6400){
+        if(scroll > 5100 && scroll < 6400){
 
             console.log('aaaa');
 

@@ -8,6 +8,16 @@ Author: Kandice Levero
   box-sizing: border-box; /* IE */
 }
 
+/* 
+	Stating 1rem = 12px;
+*/
+html {
+	font-size:100%;
+}
+body{
+	width: 100%;
+    overflow-x: hidden;
+}
 .clear {
 	clear: both;
 }
@@ -20,9 +30,7 @@ Author: Kandice Levero
 	position:absolute;
 	top:0px;
 	width: 100%;
-	max-width: 1920px;
 	display: block;
-	margin: 0px auto;
 	background-size: cover; /*How I got the image to cover the whole width of the browser*/
     background-repeat: no-repeat;
     background-position: center bottom; /*Kept image centered in the moving space*/
@@ -198,9 +206,14 @@ Author: Kandice Levero
 
 .contact_body {
 	background-image: url("../images/contact_bkg.png");
-	width: 770px;
-	height: 503px;
 	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+
+	width: 100%;
+	max-width:800px;
+	height: 528px;
+	
 	position: absolute;
 	margin: auto;
 	left:0;
@@ -208,6 +221,8 @@ Author: Kandice Levero
 	top: -550px;
 	z-index: 120;
 	text-align: center;
+
+	/*border:black thick solid;*/
 }
 
 .drink_us {
@@ -215,10 +230,10 @@ Author: Kandice Levero
 	font-family: 'Raleway', sans-serif;
 	font-weight: 200;
 	color: white;
-	font-size: 21px;
-	line-height: 30px;
+	font-size: 1.35rem;
+	line-height: 1.875rem;
 	margin: auto;
-	padding-top: 80px;
+	padding-top: 4.9rem;
 }
 
 .hear_you {
@@ -227,9 +242,9 @@ Author: Kandice Levero
 	font-weight: normal;
 	font-style: normal;
 	color: #ff471a;
-	font-size: 60px;
+	font-size: 3.75rem;
 	margin: auto;
-	padding-top: 60px;
+	padding-top: 3.75rem;
 }
 
 .email {
@@ -237,19 +252,19 @@ Author: Kandice Levero
 	font-weight: normal;
 	font-style: normal;
 	color: #494987;
-	font-size: 50px;
+	font-size: 3rem;
 	margin: auto;
-	padding-top: 65px;
+	padding-top: 3.75rem;
 }
 
 .our_email {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 200;
 	color: white;
-	font-size: 21px;
-	line-height: 30px;
+	font-size: 1.35rem;
+	line-height: 1.875rem;
 	margin: auto;
-	padding-top: 10px;
+	padding-top: .75rem;
 }
 
 .our_email a {
@@ -279,18 +294,21 @@ Author: Kandice Levero
 	width: 100%;
 	height: 3000px;
 	display: block;
-	margin-top: 550px;
-    padding-top: 350px;
+	margin: 30rem auto 0 auto;
+    padding-top: 32rem;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center; /*Kept image centered in the moving space*/
 }
 
 .white_block {
-	width: 700px;
-	height: 350px;
+	width: 100%;
+	max-width: 700px;
+
 	background-color: rgba(255, 255, 255, 0.8);
-	margin: 100px auto 0px auto;
+	
+	margin: 50px auto 50px auto;
+	
 	border-top: 1px solid #00004d;
 	border-bottom: 1px solid #00004d;
 }
@@ -333,7 +351,7 @@ Author: Kandice Levero
 	text-align: center;
 	/*border: 1px solid black;*/
 	height: 394px;
-	margin-top: 100px;
+	margin-top: 9rem;
 }
 
 .bub {
@@ -500,7 +518,7 @@ Author: Kandice Levero
 
 .alphabet_grid {
 	background-image: url("../images/grid_bkg.png"); 
-	margin-top: 30px;
+	margin: 30px auto 0 auto;
 	width: 100%;
 	height: 2234px;
 	display: block;
@@ -521,47 +539,25 @@ Author: Kandice Levero
 
 .row_parent {
 	width: 100%;
-	height:200px;
 }
 
-.letter_box {
-	width: 32%;
-	height: 200px;
+.letter_box{
+	width: 31%;
+}
+.odd_letter_box {
+	width: 45%;
+}
+.letter_box, .odd_letter_box {
+	line-height: 12rem;
 	text-align: center;
 	display: inline-block;
 	font-family: 'Lato', sans-serif;
 	font-weight: 100;
 	color: #00004d;
-	padding-top: 20px;
-	font-size: 150px;
+	margin:1.66rem 0rem;
+	font-size: 10rem;
 	cursor: pointer;
 	text-decoration: none;
-}
-
-/*Added to get pink bubs to hover in JQuery*/
-.pink_letter_box {
-	width: 33%;
-	height: 200px;
-	text-align: center;
-	display: inline-block;
-	font-family: 'Lato', sans-serif;
-	font-weight: 100;
-	color: #00004d;
-	padding-top: 20px;
-	font-size: 150px;
-	cursor: pointer;
-}
-
-.odd_letter_box {
-	width: 49.6%;
-	height: 200px;
-	text-align: center;
-	display: inline-block;
-	font-family: 'Lato', sans-serif;
-	font-weight: 100;
-	color: #00004d;
-	padding-top:20px;
-	font-size: 150px;
 }
 
 .cheers {
@@ -569,10 +565,10 @@ Author: Kandice Levero
 	font-weight: normal;
 	font-style: normal;
 	color: #00004d;
-	font-size: 150px;
+	font-size: 12.5rem;
 	text-align: center;
 	margin: 0;
-	padding-top: 80px;
+	padding-top: 6.6rem;
 }
 
 /***************************************************
@@ -582,12 +578,11 @@ Author: Kandice Levero
 .yellow_hover {
 	position: relative;
 	z-index: 1;
-	padding-right: 20px;
 }
 
 
 .bg {
-	background: url("../images/yellow_letter_bub.png") no-repeat center;
+	background-size: contain;
 	position: absolute;
     top: 0;
     bottom: 0;
@@ -596,16 +591,11 @@ Author: Kandice Levero
     z-index: -1;
     opacity: 0;
 }
-
+.yellow_bg{
+	background: url("../images/yellow_letter_bub.png") no-repeat center;
+}
 .pink_bg {
 	background: url("../images/pink_letter_bub.png") no-repeat center;
-	position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    opacity: 0;
 }
 
 
@@ -613,22 +603,16 @@ Author: Kandice Levero
                   COCKTAIL PAGE 
 /***************************************************/
 
-.g_block_img {
-	background-image: url("../images/after_grid.png");
+.g_block_img img{
 	width: 100%;
-	height: 400px;
 	display: block;
-	margin-top: 150px;
-	background-size: cover; /*How I got the image to cover the whole width of the browser*/
-    background-repeat: no-repeat;
-    background-position: center center; /*Kept image centered in the moving space*/
 }
 
 
 
 .cocktail_intro_parent {
 	width: 100%;
-	height: 300px;
+	height: 250px;
 	/*border: 1px solid black;*/
 	margin: auto;
 	text-align: center;
@@ -676,33 +660,35 @@ Author: Kandice Levero
 .cocktail_body {
 	background-image: url("../images/ckt_bkg_1.png");
 	width: 100%;
-	height: 1500px;
 	display: block;
-	margin-top: 0px;
+	margin: 50px auto 0 auto;
 	background-size: cover; /*How I got the image to cover the whole width of the browser*/
     background-repeat: no-repeat;
     background-position: center center; /*Kept image centered in the moving space*/
+
+    overflow-x:hidden;
+    overflow-y:hidden;
 }
 
 .recipe_parent {
-	width: 59%;
-	height: 1000px;
+	width: 42%;
 	display: inline-block;
-	/*border: 1px solid black;*/
 }
 
 .about_cocktail {
-	width: 90%;
+	width: 100%;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
 	color: #00004d;
 	font-size: 24px;
 	padding-left: 50px;
+	padding-top: 30px;
 	line-height: 28px;
 }
 
 .you_need {
 	padding-left: 50px;
+	margin: 0px;
 	font-family: ActaPoster-Italic;
 	font-weight: normal;
 	font-style: normal;
@@ -721,16 +707,26 @@ Author: Kandice Levero
 }
 
 .cocktail_silo {
-	width: 39%;
-	height: 1000px;
+	width: 56%;
 	display: inline-block;
-	/*border: 1px solid black;*/
+
 	vertical-align: top; /*How I got the image to go to top of the parent*/
 }
 
 .greyhound_cocktail {
 	margin-left: 400px;
 	opacity: 0;
+}
+
+.how_to {
+	width: 80%;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	color: #00004d;
+	font-size: 24px;
+	padding-left: 50px;
+	padding-top: 20px;
+	line-height: 28px;
 }
 
 /***************************************************
@@ -808,7 +804,10 @@ Author: Kandice Levero
 /***************************************************
                        FOOTER 
 /***************************************************/
-
+footer{
+	width:100%;
+	margin: auto;
+}
 
 .social_media_block {
 	width: 100%;
@@ -835,12 +834,12 @@ Author: Kandice Levero
 
 @media only screen and (max-width: 1600px)
 {
+	body{
+		font-size:18px;
+	}
 /***************************************************
                        BUBS 
 /***************************************************/
-	.bub_parent {
-	margin-top: 330px;
-	}
 
 	.bub {
 		height: 276px;
@@ -907,16 +906,22 @@ Author: Kandice Levero
                   INTRO BLOCK 
 /***************************************************/
 	.intro_block {
-	height: 2000px;
-	margin-top: 600px;
-}
-
+		height: 2000px;
+	}
 
 }
 
 
 @media only screen and (max-width: 1024px)
-{ 
+{ 	
+	/* 
+		Stating 1rem = 9px;
+	*/
+	html {
+		font-size:75%;
+	}
+
+
 	.bub {
 		height: 188px;
 	}
@@ -983,10 +988,48 @@ Author: Kandice Levero
 		height: 1500px;
 	}
 
+	/*
+		contact
+	*/
+	.contact_body {
+		height:540px;
+	}
+	.drink_us {
+		font-size: 1.8rem;
+		line-height: 2.5rem;
+		padding-top: 6.5rem;
+	}
+
+	.hear_you {
+		font-size: 5rem;
+		padding-top: 5rem;
+	}
+
+	.email {
+		font-size: 4rem;
+		padding-top: 5rem;
+	}
+	.our_email {
+		font-size: 1.8rem;
+		line-height: 2.5rem;
+		padding-top: 1rem;
+	}
+
 
 }
 
+@media only screen and (max-width: 750px){
+	html {
+		font-size:60%;
+	}
 
+	/*
+		contact
+	*/
+	.contact_body {
+		height:495px;
+	}
+}
 
 
 /*@media only screen and (max-width: 414px) 
@@ -994,6 +1037,12 @@ Author: Kandice Levero
 
 @media only screen and (max-width: 568px){
 
+	/* 
+		Stating 1rem = 6px;
+	*/
+	html {
+		font-size:42%;
+	}
 
 /***************************************************
                      HEADER 
@@ -1044,15 +1093,6 @@ Author: Kandice Levero
                      INTRO BLOCK 
 /***************************************************/
 
-.white_block {
-	width: 100%;
-	height: 350px;
-	background-color: rgba(255, 255, 255, 0.8);
-	margin: 100px auto 0px auto;
-	border-top: 1px solid #00004d;
-	border-bottom: 1px solid #00004d;
-}
-
 .parenthesis_1 {
 	display: none;
 }
@@ -1077,32 +1117,22 @@ Author: Kandice Levero
 /***************************************************/
 
 
+	.bub {
+		height: 250px;
+	}
+	.bub_1 {
+		width: 302px;
+	}
 
-.bub_1 {
-	background-image: url("../images/bub_1.png");
+	.bub_2 {
+		width: 250px;
+		margin: 0px 20px 0px 20px;
+	}
 
-	width: 80%;
-
-	cursor: pointer;
-}
-
-.bub_2 {
-	background-image: url("../images/bub_2.png");
-	background-position: center; 
-	background-size: 100% 100%;
-	width: 80%;
-	margin: 0px 20px 0px 20px;
-	cursor: pointer;
-}
-
-.bub_3 {
-	background-image: url("../images/bub_3.png");
-	background-position: left center; 
-	background-size: 90% 100%;
-	width: 80%;
-	margin: 0px 20px 0px 20px;
-	cursor: pointer;
-}
+	.bub_3 {
+		width: 302px;
+		margin: 0px 20px 0px 20px;
+	}
 
 .search_text{
 	width: 100%;
@@ -1133,19 +1163,37 @@ Author: Kandice Levero
 }
 
 
-.blue_line {
-	width:50px;
-}
+	.blue_line {
+		width:50px;
+	}
 
 
 	.intro_block {
-		height: 750px;
+		height: 1300px;
+	}
+
+	/*
+		contact
+	*/
+	.contact_body {
+		height:300px;
 	}
 
 }
 
 
+@media only screen and (max-width: 375px){
+	html {
+		font-size:26%;
+	}
 
+	/*
+		contact
+	*/
+	.contact_body {
+		height:248px;
+	}
+}
 
 
 
