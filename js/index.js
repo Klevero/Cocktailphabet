@@ -177,34 +177,13 @@ for(var i=0; i<cocktail_array.length; i++){
         });
 
     }else{
-
-        togglenotAvailable();
-        
+        $("#letter_"+i ).click(function() {
+            togglenotAvailable();
+        });
     }
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -248,14 +227,15 @@ $(".not_yet_button").click(function(){
 function togglenotAvailable()
 {   
     /*console.log(contact)*/
+
     if (notAvailable === false) {
 
-        $('.not_yet').delay(600).css({'display':'block', 'opacity':'1'});
+        $('.not_yet').css({'display':'block', 'opacity':'1'});
         notAvailable = true;
 
     } else {
 
-         $('.not_yet').delay(600).css({'display':'none', 'opacity':'0'});
+         $('.not_yet').css({'display':'none', 'opacity':'0'});
          notAvailable = false;
 
     }
