@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE>
+<html ng-app>
 
 <head>
 	<title>Cocktailphabet</title>
@@ -204,77 +204,57 @@
 
 <!--G COCKTAIL-->     <!--G COCKTAIL--> 
 	
-	<!--
-		Bar Hero Photo
-	-->
-	<div class="g_block_img">
-		<img src="images/gibson_banner.png"/>
-	</div>
+	<div class="cocktaillist" ng-controller="AppCtrl1">
+		<!--
+			Bar Hero Photo
+		-->
+		<div class="cocktailbody" ng-repeat="cocktail in cocktails" ng-bind-html-unsafe="cocktail.description">
+			<div class="g_block_img">
+				<img src="images/gibson_banner.png"/>
+			</div>
 
-	<div class="clear cocktail_intro_parent">
-		<div class="drink_letter">
-			<img src="images/letter_g.png" />
-		</div>
-		<h4 class="stands_for">stands for</h4>
-		<div class="vertical_divider"></div>
-		<h4 class="cocktail_title">gibson</h4>
-	</div>
+			<div class="clear cocktail_intro_parent">
+				<div class="drink_letter">
+					<img src="images/letter_g.png" />
+				</div>
+				<h4 class="stands_for">stands for</h4>
+				<div class="vertical_divider"></div>
+				<h4 class="cocktail_title">gibson</h4>
+			</div>
 
-	<div class="cocktail_body">
-		<div class="recipe_parent">
-			<p class="about_cocktail">In the heart of Bushwick the Tradesman offers a savory take on the classic gibson.  Proprietor Larissa Varges explains that the secret to her perfect gibson is in the onion.  She brines white pearl cocktail onions in her unique blend of spices for the perfect bite.  Speaking of the presentation Larissa jokes "Who doesn't want their own little onion?"  Adding a splash of the brine to the cocktail gives it the soft pink hue and a delightfully salty quality to the palate.  She kindly shared her brine recipe with Cocktailphabet over a delicious Sunday brunch by chef Julia Greene(yes, our food stylist)</p>
-			<h3 class="you_need">for the gibson</h3>
-			<ul class="ingredients_list">
-				<li class="ingredient">2 oz Dorthy Parker gin</li>
-				<li class="ingredient">.75 oz Noilly White vermouth</li>
-				<li class="ingredient">.75 oz prepared brine</li>
-				<li class="ingredient">2 dash liquid smoke</li>
-			</ul>
-			<h3 class="you_need">for the brine</h3>
-			<ul class="ingredients_list">
-				<li class="ingredient">1 lb fresh cocktail onions</li>
-				<li class="ingredient">.5 cup cider vinegar</li>
-				<li class="ingredient">.5 cup red wine vinegar</li>
-				<li class="ingredient">.5 cup water</li>
-				<li class="ingredient">.5 cup sugar</li>
-				<li class="ingredient">3 tbs salt</li>
-				<li class="ingredient">2 sprigs rosemary</li>
-				<li class="ingredient">3 bay leaves</li>
-				<li class="ingredient">12 whole allspice</li>
-				<li class="ingredient">.5 tbs minced garlic</li>
-				<li class="ingredient">1 cup dry vermouth</li>
-			</ul>				
-		</div>
-		<div class="cocktail_silo">
-			<img src="images/gibson.png"class="greyhound_cocktail" />
-		</div>	
-				<div>
-			<p class="how_to">Prepare the brine by first blanching and pealing the onions.  Combine all ingredients except onions and vermouth in a saucepan and simmer for 15 minutes.  Pour mixture over onions and add the vermouth.  Seal and let sit for 20 days.
-			<br>Ok, you waited 20 days and resisted the urge to eat your jar of salty spicy onions!  Congratulations.  To make the perfect gibson combine all ingredients in a mixing glass.  Stir well and strain using a julep strainer.  Pour into a chilled glass and garnish with one onion and a small cut of rosemary from your brine.  Enjoy the brine of your labor!!</p>
-		</div>
+			<div class="cocktail_body">
+				<div class="recipe_parent">
+					<p class="about_cocktail" ng-bind-html="cocktail.description"></p>
+					<div>{{cocktail.receipe}}</div>
+				</div>
+				<div class="cocktail_silo">
+					<img src="images/gibson.png"class="greyhound_cocktail" />
+				</div>	
+						<div>
+					<p class="how_to">{{cocktail.howto}}</p>
+				</div>
 
-<!--BAR INFO-->     <!--BAR INFO-->
+		<!--BAR INFO-->     <!--BAR INFO-->
 
-	<div class="bar_parent">
-		<div class="bar_bub">
-			<a href="http://tradesmanbar.com/"><img src="images/tradesman_bub.png"></a>
+			<div class="bar_parent">
+				<div class="bar_bub">
+					<a href="http://tradesmanbar.com/"><img src="images/tradesman_bub.png"></a>
+				</div>
+				<div class="vertical_divider_2"></div>
+				<div class="bar_info">
+					<h5 class="by">brought to you by:</h5>
+					<h4 class="bar_name">the tradesman</h4>
+					<dir class="horizontal_divider"></dir>
+					<ul class="bar_address">
+						<li>222 BUSHWICK AVE</li>
+						<li>BROOKLYN NY,11206</li>
+						<li>(718) 386-5300</li>
+					</ul>
+				</div>
+			</div>
 		</div>
-		<div class="vertical_divider_2"></div>
-		<div class="bar_info">
-			<h5 class="by">brought to you by:</h5>
-			<h4 class="bar_name">the tradesman</h4>
-			<dir class="horizontal_divider"></dir>
-			<ul class="bar_address">
-				<li>222 BUSHWICK AVE</li>
-				<li>BROOKLYN NY,11206</li>
-				<li>(718) 386-5300</li>
-			</ul>
 		</div>
 	</div>
-
-	</div>
-
-
 
 
 <!--FOOTER-->     <!--FOOTER-->
@@ -292,7 +272,9 @@
 
 
 
-
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular.min.js"></script>
+	<script src="js/controller.js"></script>
+	
 </body>
 </html>
 
