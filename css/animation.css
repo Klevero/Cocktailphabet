@@ -1,0 +1,73 @@
+.slideFromTo.cocktailLeft{
+	transform: translateX(-1000px);
+}
+.slideIn.cocktailLeft{
+	animation: 1s ease forwards;
+	animation-name: slideInFromLeft;
+}
+.slideOut.cocktailLeft{
+	animation: 1s ease forwards;
+	animation-name: slideOutToLeft;
+}
+
+.slideFromTo.cocktailRight{
+	transform: translateX(1000px);
+}
+.slideIn.cocktailRight{
+	animation: 1s ease forwards;
+	animation-name: slideInFromRight;
+}
+.slideOut.cocktailRight{
+	animation: 1s ease forwards;
+	animation-name: slideOutToRight;
+}
+
+@keyframes slideInFromLeft {
+  to {
+    transform: translateX(0px);
+  }
+}
+@keyframes slideOutToLeft {
+  to {
+    transform: translateX(-1000px);
+  }
+}
+@keyframes slideInFromRight {
+  to {
+    transform: translateX(0px);
+  }
+}
+@keyframes slideOutToRight {
+  to {
+    transform: translateX(1000px);
+  }
+}
+
+
+
+
+.cocktailbody{
+	position:relative;
+}
+.triangle1 {
+	bottom:0px;
+	left:0px;
+	position:absolute;
+	height: 0;
+	width: 0;
+	border-left: 1200px solid transparent;
+	border-right: 100px solid transparent;
+	border-bottom: 00px solid transparent;
+	border-top: 1800px solid transparent;
+}
+.triangle2 {
+	bottom:0px;
+	right:0px;
+	position:absolute;
+	height: 0;
+	width: 0;
+	border-left: 1200px solid transparent;
+	border-right: 0px solid transparent;
+	border-bottom: 1200px solid transparent;
+	border-top: 1800px solid transparent;
+}

@@ -24,7 +24,7 @@ var cocktail_array = [
         'letter':'c',
         'thumbnail_class':'yellow_bg',
         'thumbnail_odd':'false',
-        'internal_link':'incomplete'
+        'internal_link':' '
     },
     {
         'letter':'d',
@@ -159,7 +159,7 @@ var cocktail_array = [
 
 for(var i=0; i<cocktail_array.length; i++){
     
-    console.log( cocktail_array[i] );
+    //console.log( cocktail_array[i] );
 
     /****** Creating HTML for each letter ******/
 
@@ -172,7 +172,7 @@ for(var i=0; i<cocktail_array.length; i++){
         $("#letter_"+i ).click(function() {
 
             $('body').stop().animate({
-                scrollTop: $( cocktail_array[$(this).data('id')].internal_link ).offset().top
+                scrollTop: $('#cocktailbody-'+cocktail_array[$(this).data('id')].letter).offset().top
             }, 500, function(){console.log('animateion finished') });
         });
 
@@ -255,7 +255,6 @@ $(".bub_1").click(function() {
 $(window).scroll(
     function (event) {
         var scroll = $(window).scrollTop();
-        console.log(scroll);
         // Check the Position
 
         if(scroll > 800){
@@ -275,27 +274,21 @@ $(window).scroll(
         }
 
 
+        /****** GREYHOUND COCKTAIL SLIDES FROM RIGHT ******/
+        for(var i=0; i<cocktail_array.length; i++){
+            if($('#cocktailbody-'+cocktail_array[i].letter).offset() !== undefined){
+                if(scroll > $('#cocktailbody-'+cocktail_array[i].letter).offset().top + 200 && scroll < $('#cocktailbody-'+cocktail_array[i].letter).offset().top + 2400){
 
+                    $('#cocktailbody-'+cocktail_array[i].letter).find('.slideFromTo').removeClass('slideOut');
+                    $('#cocktailbody-'+cocktail_array[i].letter).find('.slideFromTo').addClass('slideIn');
+                } else {
+                    $('#cocktailbody-'+cocktail_array[i].letter).find('.slideFromTo').removeClass('slideIn');
+                    $('#cocktailbody-'+cocktail_array[i].letter).find('.slideFromTo').addClass('slideOut');
 
-/****** GREYHOUND COCKTAIL SLIDES FROM RIGHT ******/
-
-        if(scroll > 5100 && scroll < 6400){
-
-            console.log('aaaa');
-
-            $('.greyhound_cocktail').stop().animate(
-                {'margin-left':'0px', opacity:1},
-                'slow'
-            );
-
-        } else {
-
-            $('.greyhound_cocktail').stop().animate(
-                {'margin-left':'400px', opacity:0},
-                'slow'
-            );
-
+                }
+            }
         }
+
     }
 );
 

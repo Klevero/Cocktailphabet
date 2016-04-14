@@ -1,0 +1,1215 @@
+/*
+Project Name: Cocktailphabet Style
+Author: Kandice Levero
+*/
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+/* 
+	Stating 1rem = 12px;
+*/
+html {
+	font-size:100%;
+}
+body{
+	width: 100%;
+    overflow-x: hidden;
+}
+.clear {
+	clear: both;
+}
+
+/***************************************************
+                       HEADER 
+/***************************************************/
+
+.section_1 {
+	position:absolute;
+	top:0px;
+	width: 100%;
+	max-width: 1920px;
+	display: block;
+	margin: 0px auto;
+	background-size: cover; /*How I got the image to cover the whole width of the browser*/
+    background-repeat: no-repeat;
+    background-position: center bottom; /*Kept image centered in the moving space*/
+}
+
+.main_image{
+	background-image: url("../images/header_bk.png");
+}
+
+
+.header {
+	width: 100%;
+	height: 800px;
+	margin: 0;
+    background-size: 80px 60px;
+    background-repeat: no-repeat;
+	
+}
+
+.logo {
+	font-family: ActaPoster-Italic;
+	font-weight: normal;
+	font-style: normal;
+	color: #00004d;
+	font-size: 150px;
+	text-align: center;
+	margin: 0;
+	padding-top: 120px;
+}
+
+.blue_line {
+	width: 680px;
+	height: 10px;
+	border-bottom: 1.5px solid #00004d;
+	margin: 15px auto 0px auto;
+}
+
+/***************************************************
+                         NAV 
+/***************************************************/
+
+.nav_ol {
+	/*width: 1200px;*/
+	text-align: center;
+	padding-top: 70px;
+	margin: auto;
+}
+
+.nav_li {
+	display: inline-block;	
+	padding: 0px;
+	font-family: Helvetica;
+	color: #000066;
+	font-weight: 200;
+	font-size: 25px;
+	padding: 0px 100px 0px 100px;
+	cursor: pointer;
+}
+
+.us {
+	padding-right: 830px;
+	cursor: pointer;
+}
+
+/***************************************************
+                       ABOUT
+/***************************************************/
+
+.about_image {
+	background-image: url("../images/about_header.png");
+	position: absolute;
+	top: 0px;
+	z-index: 90;
+}
+
+.about_p {
+	width: 70%;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	color: #c8c8ea;
+	font-size: 20px;
+	line-height: 24px;
+	text-align: justify;
+	text-justify: inter-word;
+	position: absolute; left: 15%;
+	top:500px;
+	z-index: 100;
+	margin: auto;
+	display: none;
+	opacity: 0;
+}
+
+.x_button {
+	width: 80px;
+	height: 80px;
+	position: fixed;
+	right: 60px;
+	top: 60px;
+	opacity: 0;
+	display: none;/*invisible AND unclickable*/
+}
+
+.about_body {
+	width: 100%;
+	background-color: #1B1549;
+	/*Margin top pushes up the about_body
+	Padding top brings only the content 
+	back down so photos show*/
+	margin-top: -900px;
+	padding-top: 950px;
+	z-index: 1;
+	opacity: 0;
+	display: none;
+}
+
+.profile_box_parent {
+	width: 100%;
+	/*border: 1px solid white;*/
+	margin: 900px auto 0px auto;
+	padding-bottom: 50px;
+
+}
+
+.profile_box {
+	width: 33%;
+	/*border: 1px solid white;*/
+	display: inline-block;
+	vertical-align: top;
+}
+
+.profile_img img{
+	display: block; /*need it to center the image*/
+	margin: auto;
+}
+
+.name_letter {
+	font-family: ActaPoster-Italic;
+	font-weight: normal;
+	font-style: normal;
+	color: white;
+	font-size: 100px;
+	text-align: center;
+	margin: 0;
+	padding-top: 40px;
+}
+
+.profile_p {
+	width: 70%;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	color: #c8c8ea;
+	font-size: 18px;
+	line-height: 20px;
+	margin: auto;
+	padding-top: 20px;
+}
+
+.profile_link  {
+	text-decoration: none;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	color: #f5f53d;
+	font-size: 18px;
+	line-height: 20px;
+	margin-top: 20px;
+	display: block;
+	text-align: center;
+}
+
+/***************************************************
+                       CONTACT
+/***************************************************/
+
+.contact_body {
+	background-image: url("../images/contact_bkg.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+
+	width: 100%;
+	max-width:800px;
+	height: 528px;
+	
+	position: absolute;
+	margin: auto;
+	left:0;
+    right:0;
+	top: -550px;
+	z-index: 120;
+	text-align: center;
+
+	/*border:black thick solid;*/
+}
+
+.drink_us {
+	width: 60%;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	color: white;
+	font-size: 1.35rem;
+	line-height: 1.875rem;
+	margin: auto;
+	padding-top: 4.9rem;
+}
+
+.hear_you {
+	width: 70%;
+	font-family: ActaPoster-Italic;
+	font-weight: normal;
+	font-style: normal;
+	color: #ff471a;
+	font-size: 3.75rem;
+	margin: auto;
+	padding-top: 3.75rem;
+}
+
+.email {
+	font-family: ActaPoster-Italic;
+	font-weight: normal;
+	font-style: normal;
+	color: #494987;
+	font-size: 3rem;
+	margin: auto;
+	padding-top: 3.75rem;
+}
+
+.our_email {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	color: white;
+	font-size: 1.35rem;
+	line-height: 1.875rem;
+	margin: auto;
+	padding-top: .75rem;
+}
+
+.our_email a {
+	text-decoration: none;
+	color: white;
+}
+
+
+
+
+.mail_button {
+	position: absolute;
+	top: -20px;
+	right: -20px;
+	display: block;
+	z-index: 130;
+}
+
+/***************************************************
+                     INTRO BLOCK 
+/***************************************************/
+
+
+
+.intro_block {
+	background-image: url("../images/ckt_laydown.png");
+	width: 100%;
+	height: 3000px;
+	display: block;
+	margin-top: 46rem;
+    padding-top: 28rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center; /*Kept image centered in the moving space*/
+}
+
+.white_block {
+	width: 100%;
+	max-width: 700px;
+
+	background-color: rgba(255, 255, 255, 0.8);
+	
+	margin: 50px auto 50px auto;
+	
+	border-top: 1px solid #00004d;
+	border-bottom: 1px solid #00004d;
+}
+
+.parenthesis_1 {
+	font-size: 200px;
+	font-family: Helvetica;
+	color: #00004d;
+	padding: 50px 0px 0px 30px;
+	margin: 0px;
+	float: left;
+}
+
+.parenthesis_2 {
+	font-size: 200px;
+	font-family: Helvetica;
+	color: #00004d;
+	padding: 50px 40px 0px 0px;
+	margin: 0px;
+	float: right;
+}
+
+.intro_par {
+	width: 430px;
+	font-family: ActaPoster-Italic;
+	color: #00004d;
+	font-size: 45px;
+	float: left;
+	margin-left: 35px;
+	text-align: center;
+	padding-top: 5px;
+}
+
+
+/***************************************************
+                       BUBS 
+/***************************************************/
+
+.bub_parent {
+	text-align: center;
+	/*border: 1px solid black;*/
+	height: 394px;
+	margin-top: 9rem;
+}
+
+.bub {
+	background-repeat: no-repeat;
+	display: inline-block;
+	text-align: center;
+	height: 394px;
+	/*border: 1px solid black;*/
+}
+
+.bub_1 {
+	background-image: url("../images/bub_1.png");
+	background-position: right center; 
+	background-size: 90% 100%;
+	width: 482px;
+	margin: 0px 20px 0px 20px;
+	cursor: pointer;
+}
+
+.bub_2 {
+	background-image: url("../images/bub_2.png");
+	background-position: center; 
+	background-size: 100% 100%;
+	width: 394px;
+	margin: 0px 20px 0px 20px;
+	cursor: pointer;
+}
+
+.bub_3 {
+	background-image: url("../images/bub_3.png");
+	background-position: left center; 
+	background-size: 90% 100%;
+	width: 482px;
+	margin: 0px 20px 0px 20px;
+	cursor: pointer;
+}
+
+.search_text{
+	width: 100%;
+	height: 40px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	color: white;
+	padding-top:120px;
+	font-size: 48px;
+	text-align: center;
+}
+
+.search_line {
+	width: 28%;
+	height:10px;
+	border-bottom: 1.5px solid white;
+	padding-top: 80px;
+	text-align: center;
+	margin: auto;
+}
+
+.s_category {
+	width: 100%;
+	height: 70px;
+	color: white;
+	padding-top:30px;
+	font-family: ActaPoster-Italic;
+	font-size: 84px;
+	text-align: center;
+}
+
+/***************************************************
+                   TOP BUTTON 
+/***************************************************/
+
+.top_pg_button {
+	position: fixed;
+	bottom: -360px;
+	right: 20px;
+	cursor: pointer;
+	opacity:0;
+	z-index: 110;
+}
+
+/***************************************************
+              	  NO LETTER POPUP
+/***************************************************/
+.not_yet {
+	background-image: url("../images/not_yet.png");
+	width:600px;
+	height:600px;
+ 	top:150px;
+	display: block;
+	text-align: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+	position: fixed;
+	margin: auto;
+	left:0;
+    right:0;
+	z-index: 130;
+	opacity: 0;
+	display: none;
+
+}
+
+.not_yet_button {
+	position: absolute;
+	top:50px;
+	right: 40px;
+}
+
+.have_not {
+	width: 80%;
+	font-family: ActaPoster-Italic;
+	font-weight: normal;
+	font-style: normal;
+	color: #F5E95B;
+	font-size: 50px;
+	margin: auto;
+	display:block;
+	padding-top: 180px;
+}
+
+.not_yet_divider {
+	width: 40%;
+	height: 30px;
+	border-bottom: 1px solid #F5E95B;
+	margin: auto;
+}
+
+.help_letter {
+	width: 70%;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	color: white;
+	font-size: 20px;
+	line-height: 23px;
+	margin: auto;
+	padding-top: 30px;
+}
+
+.email_2 {
+	font-family: ActaPoster-Italic;
+	font-weight: normal;
+	font-style: normal;
+	color: #494987;
+	font-size: 60px;
+	margin: auto;
+	padding-top: 20px;
+}
+
+.our_email_2 a {
+	width: 70%;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	color: white;
+	font-size: 18px;
+	margin: auto;
+	padding-top: 10px;
+	text-decoration: none;
+}
+
+/***************************************************
+              	  ALPHABET GRID
+/***************************************************/
+
+.alphabet_grid {
+	background-image: url("../images/grid_bkg.png"); 
+	margin-top: 30px;
+	width: 100%;
+	height: 2234px;
+	display: block;
+	background-size: cover; /*How I got the image to cover the whole width of the browser*/
+    background-repeat: no-repeat;
+    background-position: center center; /*Kept image centered in the moving space*/
+    padding-top: 80px;
+    z-index: 120;
+}
+
+.alphabet_parent {
+	width: 70%;
+	height: 1800px;
+	border-right: 1px solid #00004d;
+	border-left: 1px solid #00004d;
+	margin: 0px auto;
+}
+
+.row_parent {
+	width: 100%;
+}
+
+.letter_box, .pink_letter_box {
+	width: 31%;
+}
+.odd_letter_box {
+	width: 45%;
+}
+.letter_box, .pink_letter_box, .odd_letter_box {
+	line-height: 12rem;
+	text-align: center;
+	display: inline-block;
+	font-family: 'Lato', sans-serif;
+	font-weight: 100;
+	color: #00004d;
+	margin:1.66rem 0rem;
+	font-size: 10rem;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.cheers {
+	font-family: ActaPoster-Italic;
+	font-weight: normal;
+	font-style: normal;
+	color: #00004d;
+	font-size: 12.5rem;
+	text-align: center;
+	margin: 0;
+	padding-top: 6.6rem;
+}
+
+/***************************************************
+                    ALPHABET HOVER 
+/***************************************************/
+
+.yellow_hover {
+	position: relative;
+	z-index: 1;
+}
+
+
+.bg {
+	background: url("../images/yellow_letter_bub.png") no-repeat center;
+	background-size: contain;
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0;
+}
+
+.pink_bg {
+	background: url("../images/pink_letter_bub.png") no-repeat center;
+	background-size: contain; /* fit bg size according to the requried width or height */
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0;
+}
+
+
+/***************************************************
+                  COCKTAIL PAGE 
+/***************************************************/
+
+.g_block_img img{
+	width: 100%;
+	display: block;
+}
+
+
+
+.cocktail_intro_parent {
+	width: 100%;
+	height: 250px;
+	/*border: 1px solid black;*/
+	margin: auto;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.drink_letter {
+	display: inline-block;
+	margin: 20px 0px 15px 0px;
+}
+
+.stands_for {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	height: 270px;
+	color: #00004d;
+	font-size: 30px;
+	display: inline-block;
+	vertical-align: middle;
+	/*To vertically align text I added a height same
+	as the G image and then did middle vertical align*/
+	margin-right: 30px;
+}
+
+.vertical_divider {
+	width: 3px;
+	height: 100px;
+	border-right: 1.5px solid #00004d;
+	display: inline-block;
+	margin-bottom: 70px;
+}
+
+.cocktail_title {
+	font-family: ActaPoster-Italic;
+	font-weight: normal;
+	font-style: normal;
+	height: 320px;
+	color: #00004d;
+	font-size: 90px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 30px;
+}
+
+.cocktail_body {
+	background-image: url("../images/ckt_bkg_1.png");
+	width: 100%;
+	display: block;
+	margin-top: 50px;
+	background-size: cover; /*How I got the image to cover the whole width of the browser*/
+    background-repeat: no-repeat;
+    background-position: center center; /*Kept image centered in the moving space*/
+
+    overflow-x:hidden;
+    overflow-y:hidden;
+}
+
+.recipe_parent {
+	width: 42%;
+	display: inline-block;
+}
+
+.about_cocktail {
+	width: 100%;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	color: #00004d;
+	font-size: 24px;
+	padding-left: 50px;
+	padding-top: 30px;
+	line-height: 28px;
+}
+
+.you_need {
+	padding-left: 50px;
+	margin: 0px;
+	font-family: ActaPoster-Italic;
+	font-weight: normal;
+	font-style: normal;
+	color: #ff471a;
+	font-size: 60px;
+}
+
+.ingredients_list {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	color: #00004d;
+	font-size: 24px;
+	padding-left: 50px;
+	line-height: 40px;
+
+}
+
+.cocktail_silo {
+	width: 56%;
+	display: inline-block;
+
+	vertical-align: top; /*How I got the image to go to top of the parent*/
+}
+
+.greyhound_cocktail {
+	margin-left: 400px;
+	opacity: 0;
+}
+
+.how_to {
+	width: 80%;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	color: #00004d;
+	font-size: 24px;
+	padding-left: 50px;
+	padding-top: 20px;
+	line-height: 28px;
+}
+
+/***************************************************
+                       BAR INFO 
+/***************************************************/
+
+.bar_parent {
+	width: 100%;
+	height: 500px;
+	/*border: 1px solid black;*/
+	text-align: center;
+}
+
+.bar_bub {
+	display: inline-block;
+	padding: 60px;
+}
+
+.vertical_divider_2 {
+	width: 3px;
+	height: 300px;
+	border-right: 1.5px solid #00004d;
+	display: inline-block;
+	margin-bottom: 40px;
+}
+
+.bar_info {
+	width: 40%;
+	height: 400px;
+	/*border: 1px solid black;*/
+	display: inline-block;
+	margin-left: 100px;
+	margin-top: 20px;
+	text-align: center;
+	vertical-align: top;/*Need this to keep the text
+	from moving the whole parent down*/
+}
+
+.by {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	color: #00004d;
+	font-size: 24px;
+	padding-top: 30px;
+}
+
+.bar_name {
+	font-family: ActaPoster-Italic;
+	font-weight: normal;
+	font-style: normal;
+	color: #00004d;
+	font-size: 60px;
+	margin: 0px;
+}
+
+.horizontal_divider {
+	width: 200px;
+	height: 3px;
+	border-bottom: 1.5px solid #00004d;
+	display: inline-block;
+}
+
+.bar_address {
+	width: 60%;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	color: #00004d;
+	font-size: 24px;
+	line-height: 38px;
+	margin: auto;
+
+}
+
+
+/***************************************************
+                       FOOTER 
+/***************************************************/
+
+
+.social_media_block {
+	width: 100%;
+	height: 15px;
+	background-color: white;
+}
+
+.copyright {
+	width: 100%;
+	height: 120px;
+	background-color: #F5E95B;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	color: #00004d;
+	padding-top:50px;
+	font-size: 24px;
+	text-align: center;
+}
+
+
+/***************************************************
+                  RESPONSIVE CSS 
+/***************************************************/
+
+@media only screen and (max-width: 1600px)
+{
+	body{
+		font-size:18px;
+	}
+/***************************************************
+                       BUBS 
+/***************************************************/
+
+	.bub {
+		height: 276px;
+	}
+
+	.bub_1 {
+		width: 337px;
+	}
+
+	.bub_2 {
+		width: 276px;
+	}
+
+	.bub_3 {
+		width: 337px;
+	}
+
+	.search_text {
+	width: 100%;
+	height: 40px;
+	color: white;
+	padding-top:80px;
+	font-size: 40px;
+	text-align: center;
+	}
+
+	.search_line {
+	width: 28%;
+	height:10px;
+	border-bottom: 1.5px solid white;
+	padding-top: 70px;
+	text-align: center;
+	margin: auto;
+	}
+
+	.s_category {
+	width: 100%;
+	height: 70px;
+	color: white;
+	padding-top:25px;
+	font-family: ActaPoster-Italic;
+	font-size: 55px;
+	text-align: center;
+	}
+
+	.logo {
+	font-family: ActaPoster-Italic;
+	font-weight: normal;
+	font-style: normal;
+	color: #00004d;
+	font-size: 125px;
+	text-align: center;
+	margin: 0;
+	padding-top: 120px;
+	}
+
+	.blue_line {
+	width: 500px;
+	height: 10px;
+	border-bottom: 1.5px solid #00004d;
+	margin: 15px auto 0px auto;
+	}
+/***************************************************
+                  INTRO BLOCK 
+/***************************************************/
+	.intro_block {
+		height: 2000px;
+	}
+
+}
+
+
+@media only screen and (max-width: 1024px)
+{ 	
+	/* 
+		Stating 1rem = 9px;
+	*/
+	html {
+		font-size:75%;
+	}
+
+
+	.bub {
+		height: 188px;
+	}
+
+	.bub_1 {
+		width: 231px;
+	}
+
+	.bub_2 {
+		width: 188px;
+	}
+
+	.bub_3 {
+		width: 231px;
+	}
+
+	.search_text {
+	width: 100%;
+	height: 36px;
+	color: white;
+	padding-top:50px;
+	font-size: 30px;
+	text-align: center;
+	}
+
+	.search_line {
+	width: 28%;
+	height:10px;
+	border-bottom: 1.5px solid white;
+	padding-top: 50px;
+	text-align: center;
+	margin: auto;
+	}
+
+	.s_category {
+	width: 100%;
+	height: 70px;
+	color: white;
+	padding-top:20px;
+	font-family: ActaPoster-Italic;
+	font-size: 40px;
+	text-align: center;
+	}
+
+	.logo {
+	font-family: ActaPoster-Italic;
+	font-weight: normal;
+	font-style: normal;
+	color: #00004d;
+	font-size: 80px;
+	text-align: center;
+	margin: 0;
+	padding-top: 150px;
+	}
+
+	.blue_line {
+	width: 400px;
+	height: 10px;
+	border-bottom: 1.5px solid #00004d;
+	margin: 15px auto 0px auto;
+	}
+
+	.intro_block {
+		height: 1500px;
+	}
+
+	/*
+		contact
+	*/
+	.contact_body {
+		height:540px;
+	}
+	.drink_us {
+		font-size: 1.8rem;
+		line-height: 2.5rem;
+		padding-top: 6.5rem;
+	}
+
+	.hear_you {
+		font-size: 5rem;
+		padding-top: 5rem;
+	}
+
+	.email {
+		font-size: 4rem;
+		padding-top: 5rem;
+	}
+	.our_email {
+		font-size: 1.8rem;
+		line-height: 2.5rem;
+		padding-top: 1rem;
+	}
+
+
+}
+
+@media only screen and (max-width: 750px){
+	html {
+		font-size:60%;
+	}
+
+	/*
+		contact
+	*/
+	.contact_body {
+		height:495px;
+	}
+}
+
+
+/*@media only screen and (max-width: 414px) 
+{ */
+
+@media only screen and (max-width: 568px){
+
+	/* 
+		Stating 1rem = 6px;
+	*/
+	html {
+		font-size:42%;
+	}
+
+/***************************************************
+                     HEADER 
+/***************************************************/
+	.header {
+	width: 100%;
+	height: 600px;
+	/*background-color: #faebeb;*/
+	margin: 0;
+
+    background-repeat: no-repeat;
+	
+}
+
+	.logo {
+	font-family: ActaPoster-Italic;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 40px;
+	text-align: center;
+	margin: 0;
+	padding-top: 50px;
+	
+	}	
+	.nav_ol {
+	width: 100%;
+	text-align: center;
+	margin: auto;
+}
+
+.nav_li {
+	width: 100%;
+	font-family: Helvetica;
+	color: #000066;
+	font-weight: 200;
+	font-size: 25px;
+	padding-bottom: 20px;
+	cursor: pointer;
+}
+
+.us {
+	/*padding-right: 830px;*/
+	padding-right: 20px;
+	cursor: pointer;
+}
+
+/***************************************************
+                     INTRO BLOCK 
+/***************************************************/
+
+.parenthesis_1 {
+	display: none;
+}
+
+.parenthesis_2 {
+	display: none;
+}
+
+.intro_par {
+	width: 100%;
+	font-family: ActaPoster-Italic;
+	color: #00004d;
+	font-size: 45px;
+	margin-left: 35px;
+	text-align: center;
+	margin: 0;
+	padding-top: 40px;
+}
+
+/***************************************************
+                       BUBS 
+/***************************************************/
+
+
+	.bub {
+		height: 250px;
+	}
+	.bub_1 {
+		width: 302px;
+	}
+
+	.bub_2 {
+		width: 250px;
+		margin: 0px 20px 0px 20px;
+	}
+
+	.bub_3 {
+		width: 302px;
+		margin: 0px 20px 0px 20px;
+	}
+
+.search_text{
+	width: 100%;
+	height: 20px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	color: white;
+	padding-top:70px;
+	font-size: 30px;
+	text-align: center;
+}
+
+.search_line {
+	width: 28%;
+	height:10px;
+	border-bottom: 1.5px solid white;
+	padding-top: 50px;
+	margin: auto;
+}
+
+.s_category {
+	width: 100%;
+	height: 50px;
+	color: white;
+	padding-top:20px;
+	font-family: ActaPoster-Italic;
+	font-size: 70px;
+}
+
+
+	.blue_line {
+		width:50px;
+	}
+
+
+	.intro_block {
+		height: 1300px;
+	}
+
+	/*
+		contact
+	*/
+	.contact_body {
+		height:300px;
+	}
+
+}
+
+
+@media only screen and (max-width: 375px){
+	html {
+		font-size:26%;
+	}
+
+	/*
+		contact
+	*/
+	.contact_body {
+		height:248px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

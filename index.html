@@ -19,6 +19,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/header.css">
 	<link rel="stylesheet" type="text/css" href="css/about.css">
+	<link rel="stylesheet" type="text/css" href="css/animation.css">
 
 	<link rel="stylesheet" type="text/css" href="ActaPoster/MyFontsWebfontsKit.css">
 	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,200,300,700' rel='stylesheet' type='text/css'>
@@ -196,66 +197,110 @@
 			</div>
 			
 		</div>
-		<p class="cheers">cheers!</p>
+		<h2 class="cheers">cheers!</h2>
 
 
 
 
 
-<!--G COCKTAIL-->     <!--G COCKTAIL--> 
+	<!-- 
+		COCKTAIL BODY
+		COCKTAIL BODY
+		COCKTAIL BODY
+
+		START
+	-->
 	
 	<div class="cocktaillist" ng-controller="AppCtrl1">
-		<!--
-			Bar Hero Photo
-		-->
-		<div class="cocktailbody" ng-repeat="cocktail in cocktails" ng-bind-html-unsafe="cocktail.description">
-			<div class="g_block_img">
-				<img src="images/gibson_banner.png"/>
-			</div>
+		<div class="cocktailbody" id="cocktailbody-{{cocktail.letter}}" ng-repeat="cocktail in cocktails">
+			
+			<div class="triangle1" style="border-left-color:{{cocktail.style.triangle1}}"></div>
+			<div class="triangle2" style="border-bottom-color:{{cocktail.style.triangle2}}"></div>
 
-			<div class="clear cocktail_intro_parent">
-				<div class="drink_letter">
-					<img src="images/letter_g.png" />
+			<div style="position:relative;">
+				<!--
+					Bar Hero Photo
+				-->
+				<div class="g_block_img">
+					<img src="{{cocktail.bar.image}}"/>
 				</div>
-				<h4 class="stands_for">stands for</h4>
-				<div class="vertical_divider"></div>
-				<h4 class="cocktail_title">gibson</h4>
-			</div>
+				<!--
+					Cocktail Letter
+				-->
+				<div class="clear cocktail_intro_parent">
+					<div class="drink_letter">
+						
+						<img src="{{cocktail.letter_image}}" />
+						<span class="stands_for">stands for</span>
+						<span class="cocktail_title">
+							{{cocktail.cocktail.name}}
+						</span>
+					</div>
+				</div>
 
-			<div class="cocktail_body">
-				<div class="recipe_parent">
-					<p class="about_cocktail" ng-bind-html="cocktail.description"></p>
-					<div>{{cocktail.receipe}}</div>
-				</div>
-				<div class="cocktail_silo">
-					<img src="images/gibson.png"class="greyhound_cocktail" />
-				</div>	
+				<div class="cocktail_body">
+					<!--
+						START:Receipe
+					-->
+					<div class="recipe_parent {{cocktail.style.cocktail_position}}">
+						<p class="about_cocktail mainbody">{{cocktail.cocktail.description}}</p>
+						<!--
+							Cocktail Receipe
+						-->
 						<div>
-					<p class="how_to">{{cocktail.howto}}</p>
-				</div>
-
-		<!--BAR INFO-->     <!--BAR INFO-->
-
-			<div class="bar_parent">
-				<div class="bar_bub">
-					<a href="http://tradesmanbar.com/"><img src="images/tradesman_bub.png"></a>
-				</div>
-				<div class="vertical_divider_2"></div>
-				<div class="bar_info">
-					<h5 class="by">brought to you by:</h5>
-					<h4 class="bar_name">the tradesman</h4>
-					<dir class="horizontal_divider"></dir>
-					<ul class="bar_address">
-						<li>222 BUSHWICK AVE</li>
-						<li>BROOKLYN NY,11206</li>
-						<li>(718) 386-5300</li>
-					</ul>
+							<div ng-repeat="receipes in cocktail.cocktail.receipes">
+								<h3 class="you_need" style="color:{{cocktail.style.ingredients_text_color}}">{{receipes.title}}</h3>
+								<ul class="ingredients_list">
+									<li class="ingredient" ng-repeat="content in receipes.ingredients">{{content}}</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!--
+						END:Receipe
+					-->
+					<div class="cocktail_silo">
+						<img src="{{cocktail.cocktail.silo}}" class="greyhound_cocktail slideFromTo {{cocktail.style.cocktail_position}}" />
+					</div>
+					<div class="clear"></div>
+					<div>
+						<p class="how_to mainbody">{{cocktail.cocktail.howto}}</p>
+					</div>
+					<!--
+						START:Bar 
+					-->
+					<div class="bar_parent">
+						<div class="bar_bub">
+							<a href="{{cocktail.bar.website}}"><img src="{{cocktail.bar.bulb_image}}"></a>
+						</div>
+						<div class="vertical_divider_2"></div>
+						<div class="bar_info">
+							<h5 class="by">brought to you by:</h5>
+							<h4 class="bar_name">{{cocktail.bar.name}}</h4>
+							<dir class="horizontal_divider"></dir>
+							<ul class="bar_address">
+								<li>{{cocktail.bar.address1}}</li>
+								<li>{{cocktail.bar.address2}}</li>
+								<li>{{cocktail.bar.phone}}</li>
+							</ul>
+						</div>
+					</div>
+					<!--
+						END:Bar
+					-->
 				</div>
 			</div>
-		</div>
+
 		</div>
 	</div>
 
+	<!--
+		END
+
+		COCKTAIL BODY
+		COCKTAIL BODY
+		COCKTAIL BODY
+	-->
 
 <!--FOOTER-->     <!--FOOTER-->
 
