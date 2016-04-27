@@ -659,7 +659,6 @@ p.mainbody{
 	color: #00004d;
 	font-size: 24px;
 	line-height: 40px;
-
 	padding-left: 50px;
 	padding-right: 0px;
 }
@@ -668,6 +667,7 @@ p.mainbody{
 	width: 56%;
 	float:right;
 	vertical-align: top; /*How I got the image to go to top of the parent*/
+	mix-blend-mode: multiply;
 }
 .cocktail_silo.cocktailLeft{
 	float:left;
