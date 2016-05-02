@@ -667,7 +667,7 @@ p.mainbody{
 	width: 56%;
 	float:right;
 	vertical-align: top; /*How I got the image to go to top of the parent*/
-	mix-blend-mode: multiply;
+	
 }
 .cocktail_silo.cocktailLeft{
 	float:left;
