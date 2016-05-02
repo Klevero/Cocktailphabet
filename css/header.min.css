@@ -163,13 +163,17 @@
 
 	.header {
 		width: 100%;
-		height: 34rem;
+		height: 48rem;
+	}
+	.mobile .header {
+		width: 100%;
+		height: 42rem;
 	}
 
 
 
 	.logo {
-		font-size: 8rem;
+		font-size: 6rem;
 		margin: 0;
 		padding-top: 50px;
 	}	
@@ -187,7 +191,7 @@
 
 	.us {
 		padding: 0px;
-		width:20%;
+		width:15%;
 	}
 
 

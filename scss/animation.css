@@ -1,0 +1,99 @@
+
+
+
+.fadeFull{
+  transition:all .5s ease;
+  opacity:0;
+}
+.fadeFull:hover{
+  opacity:1;
+}
+
+/*
+	Cocktail Shilouette
+*/
+
+.pc .slideFromTo.cocktailLeft{
+	opacity:0;
+	transform: translateX(-1000px);
+}
+.pc .slideIn.cocktailLeft{
+	animation: 1s ease forwards;
+	animation-name: slideInFromLeft;
+}
+.pc .slideOut.cocktailLeft{
+	animation: 1s ease forwards;
+	animation-name: slideOutToLeft;
+}
+
+.pc .slideFromTo.cocktailRight{
+	opacity:0;
+	transform: translateX(1000px);
+}
+.pc .slideIn.cocktailRight{
+	animation: 1s ease forwards;
+	animation-name: slideInFromRight;
+}
+.pc .slideOut.cocktailRight{
+	animation: 1s ease forwards;
+	animation-name: slideOutToRight;
+}
+
+@keyframes slideInFromLeft {
+  to {
+  	opacity:1;
+    transform: translateX(0px);
+  }
+}
+@keyframes slideOutToLeft {
+  to {
+  	opacity:0;
+    transform: translateX(-1000px);
+  }
+}
+@keyframes slideInFromRight {
+  to {
+  	opacity:1;
+    transform: translateX(0px);
+  }
+}
+@keyframes slideOutToRight {
+  to {
+  	opacity:0;
+    transform: translateX(1000px);
+  }
+}
+
+/*
+	Go to Top
+*/
+
+.top_pg_button.active{
+	animation: 0.7s ease forwards;
+	animation-name: slideInMoveToTop;
+}
+.top_pg_button.deactivate{
+	animation: 0.7s ease forwards;
+	animation-name: slideOutMoveToTop;
+}
+
+@keyframes slideInMoveToTop {
+  from {
+  	opacity:0;
+   	bottom: -360px;
+  }
+  to {
+  	opacity:1;
+   	bottom: 20px;
+  }
+}
+@keyframes slideOutMoveToTop {
+  from {
+  	opacity:1;
+   	bottom: 20px;
+  }
+  to {
+  	opacity:0;
+  	bottom: -360px;
+  }
+}
