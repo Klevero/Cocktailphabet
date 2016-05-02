@@ -46,57 +46,7 @@ a{
 	top: 0px;
 }
 
-.about_p {
-	width: 70%;
-	font-size: 20px;
-	line-height: 24px;
-	position: absolute; left: 15%;
-	top:400px;
-	margin: auto;
-}
 
-.x_button {
-	width: 80px;
-	height: 80px;
-	position: fixed;
-	right: 60px;
-	top: 60px;
-	opacity: 0;
-	display: none;/*invisible AND unclickable*/
-}
-
-.about_body {
-	width: 100%;
-	background-color: #1B1549;
-	/*Margin top pushes up the about_body
-	Padding top brings only the content 
-	back down so photos show*/
-	margin-top: -900px;
-	padding-top: 950px;
-	z-index: 1;
-	opacity: 0;
-	display: none;
-}
-
-.profile_box_parent {
-	width: 100%;
-	/*border: 1px solid white;*/
-	margin: 900px auto 0px auto;
-	padding-bottom: 50px;
-
-}
-
-.profile_box {
-	width: 33%;
-	/*border: 1px solid white;*/
-	display: inline-block;
-	vertical-align: top;
-}
-
-.profile_img img{
-	display: block; /*need it to center the image*/
-	margin: auto;
-}
 
 .name_letter {
 	font-family: ActaPoster-Italic;
@@ -107,29 +57,6 @@ a{
 	text-align: center;
 	margin: 0;
 	padding-top: 40px;
-}
-
-.profile_p {
-	width: 70%;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 200;
-	color: #c8c8ea;
-	font-size: 18px;
-	line-height: 20px;
-	margin: auto;
-	padding-top: 20px;
-}
-
-.profile_link  {
-	text-decoration: none;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 200;
-	color: #f5f53d;
-	font-size: 18px;
-	line-height: 20px;
-	margin-top: 20px;
-	display: block;
-	text-align: center;
 }
 
 /***************************************************
@@ -363,10 +290,8 @@ a{
 
 .top_pg_button {
 	position: fixed;
-	bottom: -360px;
 	right: 20px;
 	cursor: pointer;
-	opacity:0;
 	z-index: 110;
 }
 
@@ -375,8 +300,8 @@ a{
 /***************************************************/
 .not_yet {
 	background-image: url("../images/not_yet.png");
-	width:600px;
-	height:600px;
+	width:50rem;
+	height:50rem;
  	top:150px;
 	display: block;
 	text-align: center;
@@ -387,7 +312,7 @@ a{
 	margin: auto;
 	left:0;
     right:0;
-	z-index: 130;
+	z-index: 10000;
 	opacity: 0;
 	display: none;
 }
@@ -404,10 +329,10 @@ a{
 	font-weight: normal;
 	font-style: normal;
 	color: #2E2E7A;
-	font-size: 50px;
+	font-size: 4rem;
 	margin: auto;
 	display:block;
-	padding-top: 180px;
+	padding-top: 6rem;
 }
 
 .not_yet_divider {
@@ -433,7 +358,7 @@ a{
 	font-weight: normal;
 	font-style: normal;
 	color: #FF5033;
-	font-size: 60px;
+	font-size: 4rem;
 	margin: auto;
 	padding-top: 20px;
 }
@@ -454,13 +379,11 @@ a{
 /***************************************************/
 
 .alphabet_grid {
-	/*background-image: url("../images/grid_bkg.png");*/
 	width: 100%;
-	height: 2234px;
+	height: 148rem;
 	display: block;
-	background-size: cover; /*How I got the image to cover the whole width of the browser*/
-    background-repeat: no-repeat;
-    background-position: center center; /*Kept image centered in the moving space*/
+	position: relative;
+	overflow: hidden;
 }
 .alphabet_triangle_1, .alphabet_triangle_2{
 	position:absolute;
@@ -523,15 +446,15 @@ a{
 
 .cheers {
 	position: relative;
-    z-index: 100;
+    z-index: 0;
 	font-family: ActaPoster-Italic;
 	font-weight: normal;
 	font-style: normal;
 	color: #00004d;
 	font-size: 12.5rem;
 	text-align: center;
-	margin: 0;
-	padding: 6.6rem;
+	margin: 2rem;
+	padding: 2rem;
 }
 
 /***************************************************
@@ -581,27 +504,7 @@ a{
 	margin-top: 30px;
 }
 
-.drink_letter{
-	
-}
-.drink_letter img{
-	height:400px;
-	vertical-align: middle;
-}
 
-.stands_for {
-	font-family: 'Raleway', sans-serif;
-	font-weight: 400;
-
-	position: relative;
-	color: #00004d;
-	font-size: 30px;
-	display: inline-block;
-	/*To vertically align text I added a height same
-	as the G image and then did middle vertical align*/
-	margin-right: 30px;
-=
-}
 
 .vertical_divider {
 	width: 3px;
@@ -611,32 +514,6 @@ a{
 	margin-bottom: 70px;
 }
 
-.cocktail_title {
-	margin: 0;
-	padding-left: 30px;
-
-	border-left: 1.5px solid #00004d;
-
-	font-family: ActaPoster-Italic;
-	font-weight: normal;
-	font-style: normal;
-
-	text-align: left;
-
-	color: #00004d;
-
-	font-size: 6.4rem;
-
-}
-
-.cocktail_body {
-	width: 100%;
-	display: block;
-	margin: 50px auto 0 auto;
-
-    overflow-x:hidden;
-    overflow-y:hidden;
-}
 
 
 .recipe_parent {
@@ -646,67 +523,16 @@ a{
 .recipe_parent.cocktailLeft{
 	float:right;
 }
-
-.about_cocktail {
-	width: 100%;
-	
-	font-family: 'Raleway', sans-serif;
-	font-weight: 300;
-	color: #00004d;
-
-	padding: 30px 0px 0px 50px;
-	
-}
 .recipe_parent.cocktailLeft .about_cocktail{
 	padding: 30px 50px 0px 0px;
 }
 
-.you_need {
-	margin: 0px;
-	font-family: ActaPoster-Italic;
-	font-weight: normal;
-	font-style: normal;
-	color: #ff471a;
-	font-size: 60px;
 
-	padding-left: 50px;
-	padding-right: 0px;
-}
 
-.ingredients_list {
-	font-family: 'Raleway', sans-serif;
-	font-weight: 300;
-	color: #00004d;
-	font-size: 24px;
-	line-height: 40px;
 
-	padding-left: 50px;
-	padding-right: 0px;
-}
 
-.cocktail_silo {
-	width: 56%;
-	float:right;
-	vertical-align: top; /*How I got the image to go to top of the parent*/
-}
-.cocktail_silo.cocktailLeft{
-	float:left;
-}
 
-.how_to {
-	width: 100%;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 300;
-	color: #00004d;
 
-	padding: 50px;
-	padding-top: 20px;
-}
-
-.recipe_parent.cocktailLeft .you_need, .recipe_parent.cocktailLeft .ingredients_list{
-	padding-left: 0px;
-	padding-right: 50px;
-}
 /***************************************************
                        BAR INFO 
 /***************************************************/
@@ -798,7 +624,7 @@ footer{
 	font-weight: 400;
 	color: #00004d;
 	padding-top:50px;
-	font-size: 24px;
+	font-size: 1.2rem;
 	text-align: center;
 }
 
@@ -865,11 +691,16 @@ footer{
 	/*
 		contact
 	*/
-	.drink_letter img{
-		height:300px;
-	}
+
 	.bar_bub img{
 		height:300px;
+	}
+
+
+
+	.have_not {
+		font-size: 4rem;
+		padding-top: 14rem;
 	}
 
 }
@@ -929,6 +760,11 @@ footer{
 		height: 1500px;
 	}
 
+	p.mainbody {
+		font-size: 1.8rem;
+		line-height: 2.8rem;
+	}
+
 	/*
 		contact
 	*/
@@ -946,6 +782,10 @@ footer{
 		padding-top: 5rem;
 	}
 
+	.have_not {
+		font-size: 4rem;
+		padding-top: 12rem;
+	}
 	.email {
 		font-size: 4rem;
 		padding-top: 5rem;
@@ -961,13 +801,6 @@ footer{
 		Cocktail
 	*/
 
-	.drink_letter img{
-		height:300px;
-	}
-	.cocktail_title{
-		font-size: 11.2rem;
-		border-left: none;
-	}
 	.recipe_parent{
 		width:100%;
 	}
@@ -1012,3 +845,308 @@ footer{
 { */
 
 @media only screen and (max-width: 568px){
+
+	/* 
+		Stating 1rem = 6px;
+	*/
+	html {
+		font-size:42%;
+	}
+
+
+/***************************************************
+                     INTRO BLOCK 
+/***************************************************/
+
+	.intro_block {
+		background-image: url("../images/ckt_laydown.sm.png");
+		width: 100%;
+		margin: 1rem 0rem 0rem 0rem;
+	}
+	.intro_block.pc{
+		height: 90rem;
+		padding-top: 32rem;
+	}
+	.intro_block.mobile{
+		padding-top: 24rem;
+	}
+
+	.parenthesis_1 {
+		display: none;
+	}
+
+	.parenthesis_2 {
+		display: none;
+	}
+
+	.white_block {
+		margin-top: -100px;
+		border-top: 1px solid #00004d;
+		border-bottom: 1px solid #00004d;
+	}
+
+	.intro_par {
+		width: 80%;
+		font-size: 3.6rem;
+		padding-top: 10px;
+	}
+	.intro_par span{
+		font-size: 6rem;
+	}
+
+/***************************************************
+                       BUBS 
+/***************************************************/
+
+	.bub_parent{
+		margin-top:2rem;
+	}
+	.bub {
+		height: 17.4rem;
+	}
+	.bub_1 {
+		width: 21rem;
+		margin: 1rem 1rem 1rem 0rem;
+	}
+
+	.bub_2 {
+		width: 17rem;
+		margin: 1rem 1rem;
+	}
+
+	.bub_3 {
+		width: 21rem;
+		margin: 1rem;
+	}
+	.bar_bub img{
+		height:150px;
+	}
+
+	.search_text{
+		width: 100%;
+		height: 20px;
+		font-weight: 200;
+		padding-top: 3.6rem;
+		font-size: 1.8rem;
+	}
+
+	.search_line {
+		width: 28%;
+		height:10px;
+		border-bottom: 1.5px solid white;
+		padding-top: 3.6rem;
+		margin: auto;
+	}
+
+	.s_category {
+		width: 100%;
+		height: 50px;
+		padding-top: 1.2rem;
+		font-size: 3.6rem;
+	}
+
+	.alphabet_grid {
+		height: 146rem;
+	}
+	.alphabet_triangle_1{
+		border-left: 48rem solid transparent;
+		border-right: 0rem solid transparent;
+		border-bottom: 146rem solid transparent;
+		border-top: 146rem solid transparent;
+		border-top-color: #faebec;
+	}
+	.alphabet_triangle_2{
+		border-left: 0px solid transparent;
+		border-right: 64rem solid transparent;
+		border-bottom: 146rem solid transparent;
+		border-top: 32rem solid transparent;
+		border-bottom-color: #f3f050;
+	}
+
+	.blue_line {
+		width:50px;
+	}
+
+	/*
+		contact
+	*/
+	.contact_body {
+		height:300px;
+	}
+
+	/*
+		drink
+	*/
+
+	p.mainbody {
+		font-size: 3.2rem;
+		line-height: 3.6rem;
+	}
+	.mobile p.mainbody {
+		font-size: 2.4rem;
+		line-height: 4.8rem;
+	}
+
+
+	
+	.bar_bub{
+		padding:0rem;
+	}
+	.bar_info .by{
+		font-size: 3.6rem;
+		padding:0rem;
+	}
+	.bar_info .bar_name{
+		font-size: 8rem;
+	}
+	.bar_address{
+		font-size: 3.6rem;
+	}
+
+
+	.not_yet {
+		width:40rem;
+		height:40rem;
+	}
+	.have_not {
+		font-size: 4rem;
+
+		padding-top: 6rem;
+	}
+	.help_letter{
+		font-size: 2.4rem;
+		line-height: 1.8rem;
+
+		padding-top: 1rem;
+	}
+	.email_2{
+		font-size: 4rem;
+
+		padding-top: 1.4rem;
+	}
+	.our_email_2 a {
+		font-size: 3rem;
+
+		padding-top: 0rem;
+	}
+	.not_yet_button{
+		top: 1rem;
+    	right: 1rem;
+	}
+	.not_yet_button img{
+		width: 6rem;
+    	height: 6rem;
+	}
+
+	.copyright {
+		font-size: 3.6rem;
+	}
+}
+
+
+@media only screen and (max-width: 375px){
+	html {
+		font-size:26%;
+	}
+
+	/*
+		contact
+	*/
+	.contact_body {
+		height:248px;
+	}
+}
+
+
+
+
+.fadein{
+	-webkit-animation: fadein 1.5s 1; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1.5s 1; /* Firefox < 16 */
+        -ms-animation: fadein 1.5s 1; /* Internet Explorer */
+         -o-animation: fadein 1.5s 1; /* Opera < 12.1 */
+            animation: fadein 1.5s 1;
+}
+.fadeout{
+	-webkit-animation: fadeout 1.5s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadeout 1.5s; /* Firefox < 16 */
+        -ms-animation: fadeout 1.5s; /* Internet Explorer */
+         -o-animation: fadeout 1.5s; /* Opera < 12.1 */
+            animation: fadeout 1.5s;
+}
+
+
+/*
+*
+* Animations
+*
+*/
+
+/*
+	fadein
+*/
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/*
+	fadeout
+*/
+@keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+
+
+
+

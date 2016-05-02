@@ -1,0 +1,193 @@
+
+/***************************************************
+                      MOBILE HEADER 
+/***************************************************/
+
+.section_1.about.mobile {
+	position: absolute;
+	top: 0px;
+	background-color: #1B1549;
+}
+
+.about_image {
+	background-image: url("../images/about_header.png");
+	position: absolute;
+	z-index: 90;
+}
+
+.about_p {
+	width: 100%;
+
+	position: absolute; 
+	top: 400px;
+
+	padding:4rem 2rem;
+	
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	color: #c8c8ea;
+	text-align: justify;
+	text-justify: inter-word;
+	z-index: 100;
+	
+	display:none;
+}
+.about_p.mobile{
+	top:120px;
+}
+.about_p p{
+	max-width: 1200px;
+	
+	margin: auto;
+
+	font-size: 1.2rem;
+	line-height: 1.8rem;
+}
+
+
+.about_body {
+	width: 100%;
+	background-color: #1B1549;
+	/*Margin top pushes up the about_body
+	Padding top brings only the content 
+	back down so photos show*/
+	margin-top: -900px;
+	padding-top: 950px;
+	z-index: 1;
+	opacity: 0;
+	display: none;
+}
+.about_body.mobile{
+	padding-top: 120rem;
+}
+
+
+.x_button {
+	position: fixed;
+	right: 2rem;
+	top: 2rem;
+	opacity: 0;
+	display: none;/*invisible AND unclickable*/
+}
+.x_button img{
+	width:4rem;
+	height:4rem
+}
+
+
+.profile_box_parent {
+	width: 100%;
+	/*border: 1px solid white;*/
+	margin: 900px auto 0px auto;
+	padding-bottom: 50px;
+
+}
+
+.profile_box {
+	width: 33%;
+	/*border: 1px solid white;*/
+	display: inline-block;
+	vertical-align: top;
+}
+
+.profile_img img{
+	display: block; /*need it to center the image*/
+	margin: auto;
+}
+
+.profile_p {
+	width: 70%;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	color: #c8c8ea;
+	
+	font-size: 1.2rem;
+	line-height: 1.8rem;
+
+	margin: auto;
+	padding: 2rem 0rem 0rem 0rem;
+}
+
+.profile_link  {
+	text-decoration: none;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	color: #f5f53d;
+	font-size: 18px;
+	line-height: 20px;
+	padding: 2rem 0rem 0rem 0rem;
+	margin: auto;
+	display: block;
+	text-align: center;
+}
+
+/***************************************************
+                  RESPONSIVE CSS 
+/***************************************************/
+
+@media only screen and (max-width: 1600px){
+
+
+}
+
+
+@media only screen and (max-width: 1024px){
+	/* 
+		Stating 1rem = 9px;
+	*/
+
+
+
+}
+
+@media only screen and (max-width: 750px){
+
+
+}
+
+
+/*@media only screen and (max-width: 414px) 
+{ */
+
+@media only screen and (max-width: 568px){
+
+	/* 
+		Stating 1rem = 6px;
+	*/
+
+	.about_p p{
+		font-size: 2.4rem;
+		line-height: 2.8rem;
+	}
+
+	.x_button {
+		right: 1.4rem;
+		top: 1.4rem;
+	}
+
+	.profile_box {
+		width:100%;
+		display: block;
+	}
+
+	.profile_p {
+		width:100%;
+		padding: 2rem;
+
+		font-size: 2.4rem;
+		line-height: 2.8rem;
+	}
+
+	.profile_link  {
+		width:50%;
+		padding: 0rem 0rem 4rem 0rem;
+		margin: 2rem auto 8rem auto;
+		border-bottom: white solid thin;
+	}
+
+}
+
+
+@media only screen and (max-width: 375px){
+
+}

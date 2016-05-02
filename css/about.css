@@ -1,0 +1,21 @@
+
+.about_image {
+	background-image: url("../images/about_header.png");
+	position: absolute;
+	z-index: 90;
+}
+
+.about_p {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	color: #c8c8ea;
+	text-align: justify;
+	text-justify: inter-word;
+	z-index: 100;
+	
+	display:none;
+}
+
+.about_p p{
+	line-height: 2.4rem;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Cocktailphabet",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "kakehi <takuma.kakehi@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Klevero/Cocktailphabet",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.3",
+    "angular": "^1.5.5",
+    "backbone": "^1.3.3"
+  }
+}
